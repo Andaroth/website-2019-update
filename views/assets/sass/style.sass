@@ -495,9 +495,23 @@ footer.footer
     label
       display: none
     input, textarea
+      border-radius: 4px 4px 0 0
       min-height: 45px
       padding: 5px
       transition: .2s ease-out
+      color: $light
+      background: transparent
+      border-bottom: 2px solid $light
+      &:invalid
+        color: red
+        background: $light
+        text-decoration: wavy underline red
+      &:hover
+        background: $light03
+      &:active, &:focus
+        color: $dark
+        background: $light
+        border-bottom: 4px solid $detail
     textarea
       margin: 10px auto !important
       max-width: 460px
@@ -506,6 +520,7 @@ footer.footer
     input[type=submit]
       color: $lightnice
       background: $nice
+      border: none
     input[type=submit].enabled
       border: 2px solid $detail
       color: $detail
