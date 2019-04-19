@@ -8,5 +8,5 @@
     <input id="mailinput" type="email" name="mail" placeholder="Your email">
     <label for="msgmail">Your message</label>
     <textarea id="msgmail" rows="5" cols="60" name="msg" placeholder="Describe your needs or say something gentle :)"></textarea>
-    <input id="sendmail" class="sendmail" type="submit" value="Submit" disabled>
+    <button id="sendmail" class="sendmail" type="submit" disabled><span>Send</span> <i class="fas fa-paper-plane"></i></button>
   </form>

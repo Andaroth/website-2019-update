@@ -71,12 +71,12 @@ $(document).ready(function(){
       (validateEmail($("#mailinput").val()))
     ) {
       $("#sendmail").addClass("enabled");
-      $("input[type=submit].sendmail").prop("disabled",false);
-      $("input[type=submit].sendmail").removeProp("disabled");
+      $("#sendmail").prop("disabled",false);
+      $("#sendmail").removeProp("disabled");
       console.log("yup");
     } else {
       $("#sendmail").removeClass("enabled");
-      $("input[type=submit].sendmail").prop("disabled",true);
+      $("#sendmail").prop("disabled",true);
       console.log("nope");
     }
   });

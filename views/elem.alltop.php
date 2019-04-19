@@ -16,15 +16,18 @@
 <?php break;} ?>
     <li><a href="#contact" id="contactlink" class="contactlink">Contact<span class="nomobile"> me</span></a></li>
   </ul>
-  <a href="#visitmenu" id="visitlink" class="visitlink"><i class="fas fa-bars visit"></i> Visit !</a>
+  <div id="visitlink" class="visitlink">
+    <i class="fas fa-bars visit"></i> 
+    <span>Visit !</span>
+    <nav>
+      <ul id="visitmenu" class="visitmenu">
+        <li><a href="./">Homepage</a></li>
+        <li><a href="./?page=about">Who am I</a></li>
+        <li><a href="./?page=portfolio">Discover my work</a></li>
+        <li><a href="./shop">My store</a></li>
+      </ul>
+    </nav>
+  </a>
   <!--<a href="#visitmenu" id="visitlink" class="visitlink"><span class="and rotate">&and;</span> Visit !</a>-->
-  <nav>
-    <ul id="visitmenu" class="visitmenu">
-      <li><a href="./">Homepage</a></li>
-      <li><a href="./?page=about">Who am I</a></li>
-      <li><a href="./?page=portfolio">Discover my work</a></li>
-      <li><a href="./shop">My store</a></li>
-    </ul>
-  </nav>
 </header>
 <?php include(C."meiling.php"); ?>

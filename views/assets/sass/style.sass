@@ -150,42 +150,55 @@ $topbarH: 80px
 .visitlink
   display: block
   float: right
-  font-size: 2em
-  line-height: $topbarH
   width: 200px
   text-align: center
   border-left: 1px solid $lightnice
   border-right: 1px solid $lightnice
-  &:hover
-    background: $dark
+  cursor: pointer
+  span
+    line-height: $topbarH
+    font-size: 2em
+    color: white
+    font-weight: bold
+    font-family: Ubuntu
   i.visit
     font-size: 24px
-ul.visitmenu
-  display: block
-  position: fixed
-  top: $topbarH
-  right: 15px
-  padding: 0
-  margin: 0
-  background: $dark07
-  transform: translateY(-500px)
-  transition: .25s ease-out
-  z-index: -5
-  box-shadow: $elevation-2
-  &:target
-    transform: translate(0)
+  ul.visitmenu
     display: block
-  li
-    display: block
-  li a
-    display: block
-    padding: 12px
-    width: 200px
-    border-left: 1px solid $lightnice
+    position: fixed
+    top: $topbarH
+    right: 15px
+    padding: 0
+    margin: 0
+    max-height: calc(100vh - 80px)
+    overflow-x: hidden
+    overflow-y: auto
+    background: $dark07
+    transform: translateY(-500px)
     transition: .25s ease-out
-    &:hover
-      border-left: 5px solid $detail
-      background: $dark
+    z-index: -5
+    box-shadow: $elevation-2
+    li
+      display: block
+    li a
+      display: block
+      padding: 12px
+      width: 200px
+      border-left: 1px solid $lightnice
+      transition: .25s ease-out
+      &:hover
+        border-left: 5px solid $detail
+        background: $dark
+  &:hover
+    span
+      color: $detail
+  &:active, &:focus
+    background: $dark
+    span
+      color: $detail
+    ul.visitmenu
+      transform: translate(0)
+      display: block
 // Sections -------------------------------------------
 section
   display: block
@@ -495,21 +508,21 @@ footer.footer
     label
       display: none
     input, textarea
-      border-radius: 4px 4px 0 0
+      border-radius: $bradius-top
       min-height: 45px
       padding: 5px
       transition: .2s ease-out
-      color: $light
-      background: transparent
+      color: $dark
+      font-weight: bold
       border-bottom: 2px solid $light
+      background: $light03
       &:invalid
         color: red
         background: $light
         text-decoration: wavy underline red
       &:hover
-        background: $light03
+        border-bottom: 2px solid $detail
       &:active, &:focus
-        color: $dark
         background: $light
         border-bottom: 4px solid $detail
     textarea
@@ -517,18 +530,31 @@ footer.footer
       max-width: 460px
       min-width: 460px
       max-height: 135px
-    input[type=submit]
+    button[type=submit]
       color: $lightnice
       background: $nice
+      height: 56px
       border: none
-    input[type=submit].enabled
-      border: 2px solid $detail
-      color: $detail
-      box-shadow: $elevation-1
-    input[type=submit].enabled:hover
-      background: $detail
-      color: $light
-      cursor: pointer
+      border-radius: $bradius
+      font-size: 24px
+      line-height: 56px
+      i
+        font-size: 24px
+        color: $dark
+        transition: all .5s $bezier
+      &.enabled
+        border: 2px solid $detail
+        color: $detail
+        box-shadow: $elevation-1
+        i
+          color: $detail
+        &:hover, &:active, &:focus
+          background: $detail
+          color: $light
+          cursor: pointer
+          i
+            color: $dark
+            transform: translate(6px,-2px) scale(1.05)
     > * 
       display: block
       width: 460px
@@ -579,6 +605,8 @@ footer.footer
   background: $dark07
   color: $detail
   z-index: 10
+  padding: 16px
+  box-sizing: border-box
   cite
     color: $light
   a
@@ -587,6 +615,7 @@ footer.footer
   background: $detail
   color: $dark
   font-weight: bold
+  box-shadow: $elevation-2
   cite
     color: $dark07
   a
