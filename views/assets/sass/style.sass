@@ -1,0 +1,609 @@
+@import "var"
+@import "animations"
+// Style -------------------------------------------
+*
+  box-sizing: border-box
+body
+  background: $lightnice
+  margin: 0
+  padding: 0
+  font-family: $roboto
+h1, h2, h3, h4, h5, h6
+  font-family: $ubuntu
+  font-weight: 700
+h2
+  text-transform: capitalize
+a
+  font-family: $ubuntu
+  font-weight: 700
+  text-decoration: none
+  &:hover 
+    text-decoration: underline
+i.fa, i.far, i.fas, i.fal, i.fab
+  min-height: 50px
+  font-size: 50px
+  // font-weight: 400
+  font-style: normal
+  color: $detail
+i.devicon
+  display: block
+  color: $light
+i.big
+  min-height: 100px
+  font-size: 100px
+i.devicon > span.alt-tile
+  font-weight: initial
+.btn
+  display: block
+  background: $nice
+  color: $light
+  clear: both
+  width: auto
+  max-width: 50%
+  padding: 5px 10px
+  margin: 10px auto
+  text-transform: uppercase
+  text-decoration: none
+  border-bottom: 2px solid $detail
+  border-radius: $bradius
+  box-sizing: border-box
+  transition: background .5s border .5s
+  box-shadow: $elevation-1
+  &:hover
+    background: $detail
+    text-decoration: none
+  &:active
+    transform: scale(.95)
+    box-shadow: none
+img.ico
+  max-width: $maxw/3
+  max-height: $maxw/3
+  display: block
+  margin: 15px auto
+img.small
+  max-width: $maxw/6
+  max-height: $maxw/6
+.shadebtn
+  background: linear-gradient(60deg,$lightnice,$nice,$nice)
+.scroller
+  width: 100%
+  font-size: 3em
+  color: $light
+  text-align: center
+  text-decoration: none
+  max-width: none
+  transform: rotate(180deg)
+  &:hover
+    text-decoration: none
+    color: $detail
+    animation: blinkbw .5s infinite
+.smallbtn
+  max-width: 200px
+  margin: 10px auto
+.inline
+  display: inline-block
+.mbottom
+  margin-bottom: 15px
+.fleft
+  float: left
+.flright
+  float: right
+.oneline 
+  display: grid
+  max-width: $maxw/2 
+  grid-template-columns: $maxw/4 $maxw/4
+  > *
+    float: left
+    margin: 0 10px
+// Navbar -------------------------------------------
+$topbarH: 80px
+.alltopbar
+  display: block
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: $topbarH
+  padding: 0 15px
+  border-bottom: 1px solid $lightnice
+  background: $dark07
+  z-index: 100
+  box-shadow: $elevation-2
+  h1
+    margin: 0
+    padding: 0
+    line-height: $topbarH
+  > *
+    float: left
+  .navigatelabel
+    margin: 0 5px 0 20px
+    line-height: $topbarH
+    color: $light
+  > ul
+    padding: 0
+    margin: 0
+    li
+      display: inline-block
+      text-align: center
+      text-transform: uppercase
+    li a
+      display: block
+      padding: 0 5px
+      height: $topbarH
+      line-height: $topbarH
+      transition: .2s ease
+      &:hover, &:focus, &:active
+        background: $dark
+        border-bottom: 3px solid $detail
+  a
+    color: $light
+    &:hover
+      text-decoration: none
+      color: $detail
+    span.and
+      position: relative
+      display: block
+      float: left
+      left: 15px
+      top: 5px
+      transition: .2s ease-out
+.visitlink
+  display: block
+  float: right
+  font-size: 2em
+  line-height: $topbarH
+  width: 200px
+  text-align: center
+  border-left: 1px solid $lightnice
+  border-right: 1px solid $lightnice
+  &:hover
+    background: $dark
+  i.visit
+    font-size: 24px
+ul.visitmenu
+  display: block
+  position: fixed
+  top: $topbarH
+  right: 15px
+  padding: 0
+  margin: 0
+  background: $dark07
+  transform: translateY(-500px)
+  transition: .25s ease-out
+  z-index: -5
+  box-shadow: $elevation-2
+  &:target
+    transform: translate(0)
+    display: block
+  li
+    display: block
+  li a
+    display: block
+    padding: 12px
+    width: 200px
+    border-left: 1px solid $lightnice
+    transition: .25s ease-out
+    &:hover
+      border-left: 5px solid $detail
+      background: $dark
+// Sections -------------------------------------------
+section
+  display: block
+  background: $light
+  text-align: center
+  padding: 80px 24px
+  clear: both
+  z-index: 5
+  border-bottom: 3px solid $detail
+  h2, h3, h4, h5, h6
+    margin: 0 auto
+    text-align: center
+    color: $detail
+  h2
+    font-size: 2em
+  p
+    line-height: 160%
+  .btn
+    line-height: $btnh
+  & > .box
+    background: $dark07
+    padding: 24px
+  & > *
+    display: block
+    max-width: $maxw
+    margin: 0 auto
+  .alright
+    width: 50%
+    margin-left: 50%
+  &:last-child
+    background: $nice
+    margin-bottom: $marginfoot
+    box-shadow: 0 3px 5px $dark07
+    &:after
+      display: block
+      content: ""
+      position: absolute
+      left: 0
+      width: 100%
+      height: 160px
+      background: url("../img/design/about_endbg.png") top left repeat-x
+      transform: translateY(60px)
+.homeChart
+  margin: 24px auto
+section.landing
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  background: $dark url("../img/design/family.jpg") center center fixed no-repeat
+  background-size: cover
+  min-height: calc(100vh - 160px)
+  color: $light
+  padding: 20px 40px
+  margin-top: $topbarH
+  .landingscroll
+    position: fixed
+    display: block
+    width: 64px
+    right: 12px
+    bottom: 0
+    animation: blinkbw 1s infinite
+    transition: .5s ease-in-out
+  .firstbox
+    display: flex
+    width: 500px
+    height: 500px
+    margin: auto 64px
+    font-size: 1.2em
+    text-align: center
+    background-color: transparent
+    background: url("../img/design/hexa_frontpage.svg") center no-repeat
+    background-size: contain
+    > div
+      margin: auto
+    p
+      padding: 0 30px
+      margin: 10px auto
+    h3
+      max-width: 66%
+      margin-top: 50px
+      margin-bottom: 0
+    .btn
+      border: 2px solid transparent
+      border-bottom: 2px solid $detail
+      &:hover
+        animation: none
+        border: 2px solid $detail
+section.presentation
+  background: linear-gradient(160deg,$nice,$dark,$dark)
+  color: $light
+  *.codepen
+    height: 480px
+  p
+    max-width: $maxw/2
+    margin: 16px auto
+section.about
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background: url("../img/design/fast.jpg") fixed no-repeat
+  background-size: cover
+  height: calc(100vh - 64px)
+  &:after
+    display: none !important
+  .story-card
+    margin: 16px auto
+    box-shadow: $elevation-1
+    h3
+      background: $nice
+      padding: 36px
+    > p, > ul
+      background: $dark07
+      padding: 12px
+      margin: 0
+      color: $light
+      li
+        text-align: left
+        max-width: $maxw/2
+        margin: 8px auto
+      strong
+        color: $detail
+  .pdp
+    border-radius: 50%
+    margin: 0 auto
+    max-height: 20vh
+    box-shadow: $elevation-1
+section.mozaic
+  h2
+    margin: 8px auto
+  h3
+    margin: 16px auto 8px auto
+  .grid > *
+    color: $light
+    border: 1px solid $lightnice
+    border-radius: $bradius
+    height: ($maxw/4)-7.5px
+    strong
+      color: $detail
+  .journey h4
+    color: $light
+    margin: 10px auto
+  .learned > *
+    display: flex
+    transition: .5s ease
+    & > i
+      margin: auto
+    span.alt-tile
+      display: block
+      position: relative
+      font-size: 14px
+      font-family: $roboto
+      margin-top: 10px
+      padding: 10px 0
+.skill-tile
+  padding: 8px
+  transition: 1.75s ease-out
+  background: $light03
+  box-shadow: $elevation-1
+.nomaxhskill
+  height: auto !important
+section.strip
+  background-size: cover !important
+  border-bottom: 0 
+  > *
+    background: $dark07
+    max-width: 50%
+    padding: 10px
+  h3
+    color: $light
+section.mywork
+  margin-top: $topbarH
+  background: url("../img/design/bulbs.jpg") center fixed no-repeat
+section.myphotos
+  background: url("../img/design/parking.jpg") center fixed no-repeat
+section.myvideos
+  background: url("../img/design/colors.jpg") center fixed no-repeat
+// portfolio
+section.screensmatrix
+  background: $nice
+  > *
+    max-width: 75%
+  .tile-slide
+    // box-shadow: 0px 2px 5px $dark07
+  img
+    min-width: 100%
+    max-height: $maxw*16/9
+  div.tile-slide div.description
+    background: $dark
+    border: 2px solid $detail
+    padding: 20px
+  a
+    text-decoration: none
+  .btn
+    margin: 100px auto 0 auto
+  /*.slick-prev, .slick-next
+    top: -75px*/
+section.stillwonders
+  background: $dark
+  > *
+    margin: 16px auto
+  .viewphotoslide img
+    width: 100%
+    max-height: $maxw*16/9
+section.animhearted 
+  background: $nice
+  article
+    margin-bottom: 20px
+    border: 1px solid $lightnice
+    background: $dark07
+    border-radius: $bradius
+    &:last-child
+      margin-bottom: initial
+    header
+      height: 50px
+      line-height: 50px
+    iframe
+      width: 100%
+      border: 0
+      height: 50vh
+    footer p
+      color: $lightnice
+// rule rewrite
+section.screensmatrix,
+section.stillwonders
+  .scroller
+    margin-top: 100px
+section
+  > p, > ul
+    display: block
+    padding: 20px
+    color: $light
+  a 
+    color: $detail
+    text-decoration: underline
+  > a.btn
+    max-width: $btnw
+    margin: 0 auto
+  h2
+    font-size: 3em
+  ul
+    padding-left: 50px
+section.fullh
+  min-height: 100vh
+// Grids -------------------------------------------
+.grid
+  display: block
+  width: $maxw
+  margin: 15px auto
+  > *
+    display: block
+    float: left
+    margin: 0 10px 10px 0
+// grid in var.sass
+.two-c > *
+  @include two-c
+.three-c > *
+  @include three-c
+.four-c > *
+  @include four-c
+  // grid-template-columns: (($maxw/2)-5px) ($maxw/2)
+.fitgrid
+  max-width: $maxw
+  > ul
+    grid-template-columns: none
+// Slick -------------------------------------------
+#photoslide.slick-slider
+  margin: 16px auto
+.tile-slide, .slick-slide, .slick-list
+  // width: 100% !important
+  padding: 0 !important
+  overflow: hidden
+  max-width: 100%
+  max-height: 75vh
+  img
+    max-width: 100%
+  //border: 1px solid $lightnice
+//.slick-slider .slick-list
+  //max-height: 70vh
+.slick-arrow
+  z-index: 5
+  width: 50px !important
+  height: 50px !important
+  &::before
+    font-size: 50px !important
+.slick-prev
+  left: -60px !important
+.slick-next
+  right: -60px !important
+.slick-dots button::before
+  color: $lightnice !important
+.slick-dots li.slick-active button::before
+  color: $light !important
+// Footer -------------------------------------------
+footer.footer
+  display: block
+  background: $dark
+  position: fixed
+  z-index: -10
+  width: 100%
+  bottom: 0
+  padding: 0
+  color: $light
+  text-align: center
+  form.contact
+    background: $lightnice
+    padding: 40px
+    label
+      display: none
+    input, textarea
+      min-height: 45px
+      padding: 5px
+      transition: .2s ease-out
+    textarea
+      margin: 10px auto !important
+      max-width: 460px
+      min-width: 460px
+      max-height: 135px
+    input[type=submit]
+      color: $lightnice
+      background: $nice
+    input[type=submit].enabled
+      border: 2px solid $detail
+      color: $detail
+      box-shadow: $elevation-1
+    input[type=submit].enabled:hover
+      background: $detail
+      color: $light
+      cursor: pointer
+    > * 
+      display: block
+      width: 460px
+      margin: 10px auto
+      border: none
+      border-radius: $bradius
+      outline: 0
+      &:hover, &:target, &:active
+        outline: 0
+  ul.socials
+    display: block
+    background: $lightnice
+    padding: 10px 0
+    margin: 0
+    height: 55px
+    list-style: none
+    li
+      display: inline-block
+      margin: 0 8px
+    a.social-ico
+      float: left
+      transition: .5s $bezier
+      transform-origin: center
+      height: 36px
+      width: 36px
+      border-radius: 50%
+      &:hover
+        transform: rotate(360deg)
+  small
+    display: block
+  a
+    display: block
+    color: $detail
+    text-decoration: underline
+  a.btn
+    text-decoration: none
+    max-width: 200px
+    &:hover
+      color: $light
+  a.scrollback
+    margin: 15px
+// Dynamics -------------------------------------------
+.mailsent
+  position: fixed
+  width: 100%
+  top: $topbarH
+  text-align: center
+  background: $dark07
+  color: $detail
+  z-index: 10
+  cite
+    color: $light
+  a
+    color: $detail
+.mailsent.mailUnsent
+  background: $detail
+  color: $dark
+  font-weight: bold
+  cite
+    color: $dark07
+  a
+    color: $light
+.hidden
+  display: none !important
+.hide
+  animation: none !important
+  transform: translateY(100px) rotate(180deg) !important
+  opacity: 0
+.shown
+  transform: translateY(0) translateX(0) translate(0) !important
+.rotate
+  transform: rotate(180deg)
+.clearfix
+  clear: both
+.jpacity
+  transition: 0s
+.nopacity
+  opacity: 0
+.noborder
+  border: none !important
+// max height
+@media screen and (max-height:700px) 
+  section
+    &:last-child
+      margin-bottom: 160px
+  footer.footer
+    position: relative
+// 1000px queries
+@media screen and (max-width:$mviewpw)
+  .alltopbar h1
+    margin-right: 20px
+  .nomobile
+    display: none

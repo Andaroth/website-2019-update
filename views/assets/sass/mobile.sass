@@ -1,0 +1,126 @@
+@import "var"
+.pagenav
+  display: none
+$mobiletopbarH: 60px
+h1
+  line-height: $mobiletopbarH !important
+  height: $mobiletopbarH
+  z-index: -1
+  margin-right: 0
+.alltopbar
+  border-bottom: 1px solid $lightnice
+.alltopbar, .visitlink
+  background: $dark
+  height: $mobiletopbarH
+  line-height: $mobiletopbarH
+ul.visitmenu
+  top: $mobiletopbarH
+  right: 15px
+  li a
+    border-left: 0
+    border-bottom: 1px solid $dark07
+section
+  &:last-child
+    margin-bottom: 80px
+section.landing
+  display: block
+  // background: url("../img/design/littlejack_portable.jpg") center fixed no-repeat
+  background-size: cover
+  margin-top: $mobiletopbarH
+  padding: 20px 0 0 0
+  .landingscroll
+    display: none
+  .firstbox
+    display: block
+    width: auto
+    height: auto
+    margin: auto
+    margin-top: 50vh
+    padding: 20px
+    background: $dark07
+    color: $light
+    p
+      padding: 0
+    h3
+      margin: inherit
+.homeChart
+  max-width: 100%
+footer.footer 
+  position: initial
+  min-height: auto
+  form.contact
+    padding: 5px 25px
+    > *
+      width: 100%
+    textarea
+      height: 45px
+      max-width: 100%
+      min-width: 100%
+  p
+    margin: 15px
+section.strip
+  padding: 0
+  > *
+    max-width: none
+section.mywork
+  margin-top: $mobiletopbarH
+section.screensmatrix
+  padding: 0
+  > *
+    max-width: none
+  div.description
+    border: none
+    border-top: 2px solid $detail
+  .btn
+    margin: 20px auto
+.slick-arrow
+  display: none !important
+// grid -------------------------------------------
+.grid
+  width: 100%
+.two-c, .three-c, .four-c
+  > *
+    width: auto !important
+    float: initial
+    margin: 10px auto
+    height: auto !important
+    padding: 5px
+  p.alt-tile
+    display: block !important
+/*.three-c
+  @include two-c*/
+// media -------------------------------------------
+@media screen and (max-width:470px)
+  h1
+    display: none
+    // position: relative
+    // float: left
+    // top: $mobiletopbarH
+    // width: 100%
+    // text-align: center
+  .visitlink
+    position: fixed
+    width: 100%
+    border: none
+  .visitlink, ul.visitmenu
+    float: initial
+    left: 0
+    right: 0
+  ul.visitmenu 
+    li a
+      height: 70px
+      padding: 0 !important
+      text-align: center
+      line-height: 70px
+      width: 100% !important
+      &:hover, &:target, &:active
+        background: $light
+        color: $nice
+        border-left: 0 !important
+  .oneline
+    display: block
+    > *
+      float: initial
+      margin: 10px auto
+.nomobile
+  display: none !important

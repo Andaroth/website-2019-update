@@ -1,0 +1,7 @@
+ErrorDocument 404 https://axelfiolle.be/404.php
+ErrorDocument 403 https://axelfiolle.be/404.php
+ErrorDocument 500 https://axelfiolle.be/404.php
+
+RewriteCond %{HTTP_HOST} ^axelfiolle\.be [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://axelfiolle.be/$1 [R=301,L]
