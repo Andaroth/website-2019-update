@@ -50,7 +50,7 @@ i.devicon > span.alt-tile
   box-sizing: border-box
   transition: background-color .75s
   // box-shadow: $elevation-1
-  &:hover
+  &:hover, &:active, &:focus
     background: $detail
     text-decoration: none
   &:active
@@ -326,13 +326,19 @@ section.mozaic
     margin: 8px auto
   h3
     margin: 16px auto 8px auto
-  .col
-    margin-bottom: 8px
+  .container
+    max-width: 800px
+    .col
+      margin-bottom: 8px
 .skill-tile
   padding: 8px
   transition: 1.75s ease-out
   background: $light03
   width: 100%
+  color: white
+  strong
+    color: $detail
+    font-weight: bold
 .nomaxhskill
   height: auto !important
 section.strip
@@ -515,6 +521,7 @@ footer.footer
       border-radius: $bradius
       font-size: 24px
       line-height: 56px
+      cursor: initial
       i
         font-size: 24px
         color: $dark
@@ -523,6 +530,7 @@ footer.footer
         border: 2px solid $detail
         color: $detail
         box-shadow: $elevation-1
+        cursor: pointer
         i
           color: $detail
         &:hover, &:active, &:focus
@@ -539,6 +547,7 @@ footer.footer
       border: none
       border-radius: $bradius
       outline: 0
+      box-sizing: border-box
       &:hover, &:target, &:active
         outline: 0
   ul.socials

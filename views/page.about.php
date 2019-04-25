@@ -10,7 +10,7 @@
         <p>My natural taste of unknown and my initiative made me discover a lot of wonders, I'd be glad to help you getting online and expands all over the Internet !</p>
       </div>
       <div class="card-cation">
-        <a href="#mozaic" class="btn scrollback">My dev's journey</a>
+        <a href="#mozaic" class="btn waves-effect scrollback">My dev's journey</a>
       </div>
     </div>
   </section>
@@ -114,7 +114,7 @@
         </div>
       </div>
     </div>
-    <a href="./?page=portfolio" class="btn shadebtn clearfix">My portfolio</a>
+    <a href="./?page=portfolio" class="btn waves-effect shadebtn clearfix">My portfolio</a>
   </section>
 </main>
 <?php include(V."elem.footer.php"); ?>

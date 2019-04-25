@@ -7,7 +7,7 @@
         <h3><strong>Web developper</strong> in love with virtual things</h3>
         <p>The worldwide web is like an interconnected dream. I'm living in the <strong>Internet Of Things</strong>.</p>
         <p><strong>Trust me your dreams</strong> I'll make them real</p>
-        <a href="#contact" class="btn smallbtn contactlink">Get in touch</a>
+        <a href="#contact" class="btn waves-effect smallbtn contactlink">Get in touch</a>
       </div>
     </div>
     <a href="#presentation" id="landingscroll" class="scroller landingscroll scrollback">&and;</a>
@@ -26,7 +26,7 @@
         <p>With more than <strong>ten years of experience in web design and developement</strong>, I can help you to <strong>create your own website</strong> and assert your presence online.</p>
       </div>
     </div>
-    <a href="./?page=about" class="btn smallbtn shadebtn">About me<span class="hidden"> about me</span></a>
+    <a href="./?page=about" class="btn waves-effect smallbtn shadebtn">About me</a>
     <!--<i class="fas fa-trophy" aria-label="trophy"><span class="jhide">&#127942;</span></i>-->
     <!--<p>I started making websites when I was just a kid. <br>With more than <strong>ten years of experience in web design and developement</strong>, I can help you to <strong>create your own website</strong> and assert your presence online.</p>-->
   </section>
@@ -56,7 +56,7 @@
       </div>
       
     </div>
-    <a href="./?page=portfolio" class="btn shadebtn">Check what I made</a>
+    <a href="./?page=portfolio" class="btn waves-effect shadebtn">Check what I made</a>
     
   </section>
 </main>

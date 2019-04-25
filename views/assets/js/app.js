@@ -49,7 +49,6 @@ $(document).ready(function(){
     var target = $(this).attr("href");
     scrollTo(target,1000,500);
   })
-  $("#visitlink").dropdown();
   /* $("#visitlink").click(function(e) {
     e.preventDefault();
     $("#visitmenu").toggleClass("shown");
@@ -63,6 +62,8 @@ $(document).ready(function(){
     e.preventDefault();
     $("#mailtab").addClass("hidden");
   });
+  $("#visitlink").dropdown();
+  $('.collapsible').collapsible();
   // FORM ---------------------------------------
   $("#mailform > *").keyup(function(){
     if (

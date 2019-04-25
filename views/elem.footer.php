@@ -4,7 +4,7 @@
   <p>This is the 2018 Edition, informations updated on 2019 :)</p>
   <p>2005 - <?= date("o") ?> &copy; All rights reserved</p>
   <a class="scrollback" href="#page_<?= $page ?>">Return to top</a>
-  <a href="./shop" class="btn shadebtn">Support me, <br/>buy art !</a>
+  <a href="./shop" class="btn waves-effect shadebtn">Support me, <br/>buy art !</a>
   <p class="hidden">Follow me on my social networks !</p>
   <ul class="socials">
     <li><a class="social-ico" href="https://www.linkedin.com/in/axel-fiolle"><img src="<?= IMG ?>ico/linkedin.png" alt="LinkedIn" width="35" height="35" /></a></li>
