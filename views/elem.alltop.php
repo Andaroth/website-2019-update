@@ -1,4 +1,4 @@
-<header class="alltopbar">
+<nav class="nav-wrapper alltopbar">
   <h1><a href="./"><?= $meta['title'] ?></a></h1>
   <p class="navigatelabel nomobile">Navigate :</p>
   <ul id="pagenav" class="pagenav">
@@ -19,15 +19,15 @@
   <div id="visitlink" class="visitlink">
     <i class="fas fa-bars visit"></i> 
     <span>Visit !</span>
-    <nav>
+    <div>
       <ul id="visitmenu" class="visitmenu">
         <li><a href="./">Homepage</a></li>
         <li><a href="./?page=about">Who am I</a></li>
         <li><a href="./?page=portfolio">Discover my work</a></li>
         <li><a href="./shop">My store</a></li>
       </ul>
-    </nav>
+    </div>
   </a>
   <!--<a href="#visitmenu" id="visitlink" class="visitlink"><span class="and rotate">&and;</span> Visit !</a>-->
-</header>
+</nav>
 <?php include(C."meiling.php"); ?>

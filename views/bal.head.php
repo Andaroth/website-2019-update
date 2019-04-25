@@ -10,6 +10,7 @@
   <meta property="og:image" content="https://axelfiolle.be/views/assets/img/design/section1bg.jpg" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="<?= V.'assets/css/fontawesome.css'?>">
+  <link rel="stylesheet" href="<?= V.'assets/css/materialize.min.css'?>">
 <?php if($page=="portfolio") { ?>
   <link rel="stylesheet" href="<?= V.'assets/js/slick.css' ?>">
   <link rel="stylesheet" href="<?= V.'assets/js/slick-theme.css' ?>">

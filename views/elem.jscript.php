@@ -11,6 +11,7 @@
 <script src="<?= JS ?>jquery-3.2.1.min.js"></script>
 <script src="<?= JS ?>visible.min.js"></script>
 <script src="<?= JS ?>slick.min.js"></script>
+<script src="<?= JS ?>materialize.min.js"></script>
 <!-- My Scripts -->
 <script src="<?= JS ?>app.js"></script>
 <?php if($page=="home") { ?>
