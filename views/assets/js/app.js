@@ -28,7 +28,6 @@ $(document).ready(function(){
   }
   // SCROLLS --------------------------------------- 
   $(document).scroll(function(e) {
-    $("#visitmenu").removeClass("shown");
     $("span.and").addClass("rotate");
     scrollTop = $(document).scrollTop();
     console.log("scrollTop : "+scrollTop);
@@ -42,6 +41,7 @@ $(document).ready(function(){
     if ($("#mozaicTrigger").visible(true)){
       $(".skill-tile").removeClass("nopacity");
     }
+    // $("#visitlink").close();
   });
   // CLICKS ---------------------------------------
   $(".scrollback").click(function(e) {
@@ -49,11 +49,12 @@ $(document).ready(function(){
     var target = $(this).attr("href");
     scrollTo(target,1000,500);
   })
-  $("#visitlink").click(function(e) {
+  $("#visitlink").dropdown();
+  /* $("#visitlink").click(function(e) {
     e.preventDefault();
     $("#visitmenu").toggleClass("shown");
     $("span.and").toggleClass("rotate");
-  });
+  }); */
   $(".contactlink").click(function(e){
     e.preventDefault();
     $("html, body").animate({scrollTop: docHeight}, 2500).fadeIn(1000);

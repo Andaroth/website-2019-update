@@ -5,7 +5,7 @@
     <img class="pdp" src="<?= IMG ?>elem/myface.jpg" alt="My face">
     <div class="card story-card">
       <h3 class="card-title"><strong class="normal">Web-stack developer</strong> passionate about new technologies</h3>
-      <div class="card-content">
+      <div class="card-content content">
         <p>I was young when I wrote my first line of code, I've always been interested in the computers' world. <br>At first, I learned to handle any design tool and also mastering <strong>the art of code</strong> mostly by myself. </p>
         <p>My natural taste of unknown and my initiative made me discover a lot of wonders, I'd be glad to help you getting online and expands all over the Internet !</p>
       </div>
