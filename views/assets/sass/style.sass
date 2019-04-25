@@ -207,6 +207,7 @@ section
     margin: 0 auto
     text-align: center
     color: $detail
+    font-size: 1.5em
   h2
     font-size: 2em
   p
@@ -225,7 +226,7 @@ section
     margin-left: 50%
   &:last-child
     background: $nice
-    margin-bottom: $marginfoot
+    margin-bottom: calc(100vh - 64px)
     box-shadow: 0 3px 5px $dark07
     &:after
       display: block
@@ -325,33 +326,13 @@ section.mozaic
     margin: 8px auto
   h3
     margin: 16px auto 8px auto
-  .grid > *
-    color: $light
-    border: 1px solid $lightnice
-    border-radius: $bradius
-    height: ($maxw/4)-7.5px
-    strong
-      color: $detail
-  .journey h4
-    color: $light
-    margin: 10px auto
-  .learned > *
-    display: flex
-    transition: .5s ease
-    & > i
-      margin: auto
-    span.alt-tile
-      display: block
-      position: relative
-      font-size: 14px
-      font-family: $roboto
-      margin-top: 10px
-      padding: 10px 0
+  .col
+    margin-bottom: 8px
 .skill-tile
   padding: 8px
   transition: 1.75s ease-out
   background: $light03
-  box-shadow: $elevation-1
+  width: 100%
 .nomaxhskill
   height: auto !important
 section.strip
@@ -519,7 +500,8 @@ footer.footer
         border-bottom: 2px solid $detail
       &:active, &:focus
         background: $light
-        border-bottom: 4px solid $detail
+        border-bottom: 2px solid $detail !important
+        box-shadow: none !important
     textarea
       margin: 10px auto !important
       max-width: 460px
