@@ -1,0 +1,19 @@
+@keyframes heartbeat {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+@keyframes blinkbw {
+  0% {
+    color: white;
+    transform: scale(1) rotate(180deg); }
+  50% {
+    color: black;
+    transform: scale(0.9) rotate(180deg); }
+  100% {
+    color: white;
+    transform: scale(1) rotate(180deg); } }
+
+/*# sourceMappingURL=animations.css.map */
