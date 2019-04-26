@@ -3,7 +3,7 @@ ErrorDocument 403 https://axelfiolle.be/404.php
 ErrorDocument 500 https://axelfiolle.be/404.php
 
 RewriteEngine On
-RewriteRule    ^([A-Za-z0-9-]+)/?$    index.php?page=$1    [NC,L]
+RewriteRule    ^page-([A-Za-z0-9-]+)/?$    index.php?page=$1    [NC,L]
 
 RewriteCond %{HTTP_HOST} ^axelfiolle\.be [NC]
 RewriteCond %{SERVER_PORT} 80 
