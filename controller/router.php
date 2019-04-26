@@ -2,7 +2,15 @@
 
 $get = explode("/", $_SERVER["REQUEST_URI"]);
 // $page = $get[2] != "" ? $get[2] : "404";
-$page = (isset($_GET['page'])) ? $_GET['page'] : 'home';
+function getter() {
+  switch(true) {
+    case (isset($_GET['page'])): return $_GET['page']; break; // legacy
+    case (isset($_GET['about'])): return 'about'; break;
+    case (isset($_GET['portfolio'])): return 'portfolio'; break;
+    default: return 'home'; break;
+  }
+}
+$page = (!$_GET) ? 'home' : getter();// (isset($_GET['page'])) ? $_GET['page'] : (isset($_GET['about'])) ? 'about' : (isset($_GET['portfolio'])) ? 'portfolio' : 'home';
 $view = V . "page." . $page . ".php";
 
 if (file_exists($view)) {
