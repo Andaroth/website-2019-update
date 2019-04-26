@@ -379,11 +379,15 @@ section.screensmatrix
     top: -75px*/
 section.stillwonders
   background: $dark
-  > *
-    margin: 16px auto
-  .viewphotoslide img
-    width: 100%
-    max-height: $maxw*16/9
+  .viewphotoslide
+    max-width: 1200px
+    .btn
+      background: $dark03
+      border-color: $light07
+      &:hover
+        background: $dark07
+        color: $detail
+        border-color: $detail
 section.animhearted 
   background: $nice
   article

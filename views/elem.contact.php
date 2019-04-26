@@ -10,4 +10,3 @@
     <textarea id="msgmail" rows="5" cols="60" name="msg" placeholder="Describe your needs or say something gentle :)"></textarea>
     <button id="sendmail" class="waves-effect sendmail" type="submit" disabled><span>Send</span> <i class="fas fa-paper-plane"></i></button>
   </form>
-waves-effect
