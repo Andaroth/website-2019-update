@@ -114,7 +114,7 @@
         </div>
       </div>
     </div>
-    <a href="./?page=portfolio" class="btn waves-effect shadebtn clearfix">My portfolio</a>
+    <a href="./portfolio" class="btn waves-effect shadebtn clearfix">My portfolio</a>
   </section>
 </main>
 <?php include(V."elem.footer.php"); ?>

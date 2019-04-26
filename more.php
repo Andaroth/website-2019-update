@@ -1,2 +1,2 @@
 <?php
-  header('Location: ./?page=about');  
+  header('Location: ./about');  
