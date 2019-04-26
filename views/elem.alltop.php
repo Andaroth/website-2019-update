@@ -22,11 +22,10 @@
   </div>
   <ul id="visitmenu" class="visitmenu dropdown-content">
     <li><a href="./">Homepage</a></li>
-    <li><a href="./?page=about">Who am I</a></li>
-    <li><a href="./?page=portfolio">Discover my work</a></li>
+    <li><a href="./about">Who am I</a></li>
+    <li><a href="./portfolio">Discover my work</a></li>
     <li><a href="./shop">My store</a></li>
   </ul>
   </a>
   <!--<a href="#visitmenu" id="visitlink" class="visitlink"><span class="and rotate">&and;</span> Visit !</a>-->
 </nav>
-<?php include(C."meiling.php"); ?>
