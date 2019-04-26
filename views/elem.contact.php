@@ -1,4 +1,4 @@
-<form id="mailform" class="contact formbox" action="./" method="post">
+<form id="mailform" class="contact formbox" method="post">
     <i class="fa fa-comments" aria-label="mailbox"></i>
     <h3>Tell me what you need</h3>
     <small id="alertmail" class="nomobile">/!\ Each input field must be filled. </small>

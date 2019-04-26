@@ -26,6 +26,37 @@ $(document).ready(function(){
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		return regex.test(email);
   }
+  function sendMail(name,mail,msg) {
+    console.log('sendMail(name,mail,msg)')
+    if (!validateEmail(mail)) return false
+    if (name && mail && msg && validateEmail(mail)) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'http://localhost/www2/api/mail.php', false); 
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+      var resMsg = ''
+      var mailTo = ''
+
+      xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4 && xhr.status === 200) {
+          console.log("Réponse reçue: %s", xhr.responseText);
+          resMsg = 'Thanks for your confidence ! Your message has been sent to the mailman :)';
+        } else {
+          console.log("Status de la réponse: %d (%s)", xhr.status, xhr.statusText);
+          resMsg = 'I\'m sorry but it didn\'t work. You can join me at this adress instead : ax.fiolle@gmail.com';
+        }
+        M.toast({
+          displayLength: 6000,
+          html: resMsg
+        })
+      }
+
+      xhr.send(`name=${name}&mail=${mail}&msg=${msg}`);
+
+    } else {
+      console.warn('sendMail('+name+','+mail+','+msg+')=> undefined param')
+    }
+  }
   // SCROLLS --------------------------------------- 
   $(document).scroll(function(e) {
     $("#visitmenu").removeClass("shown");
@@ -62,6 +93,20 @@ $(document).ready(function(){
     e.preventDefault();
     $("#mailtab").addClass("hidden");
   });
+  $("#sendmail").click((e)=>{
+    console.log('$("#sendmail").click')
+    e.preventDefault();
+    var name = $("#nameinput")[0].value
+    var mail = $("#mailinput")[0].value
+    var msg = $("#msgmail")[0].value
+    if (name && mail && msg && name.length && mail.length && msg.length) {
+      sendMail(name,mail,msg)
+    }
+  })
+  $("#visitlink").dropdown();
+  $('.collapsible').collapsible();
+  $('.materialboxed').materialbox();
+
   // FORM ---------------------------------------
   $("#mailform > *").keyup(function(){
     if (
@@ -71,11 +116,13 @@ $(document).ready(function(){
       (validateEmail($("#mailinput").val()))
     ) {
       $("#sendmail").addClass("enabled");
+      $("#sendmail").addClass("pulse");
       $("#sendmail").prop("disabled",false);
       $("#sendmail").removeProp("disabled");
       console.log("yup");
     } else {
       $("#sendmail").removeClass("enabled");
+      $("#sendmail").removeClass("pulse");
       $("#sendmail").prop("disabled",true);
       console.log("nope");
     }
@@ -94,15 +141,20 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 2000,
   });
-  //photo
-  $("#viewphotoslide").slick({
+  //photo 
+  $("#viewphotoslide").carousel({
+    fullWidth: true,
+    numVisible: 1,
+    indicators: true
+  });
+  /* $("#viewphotoslide").slick({
     dots: true,
     infinite: true,
     centerMode: true,
     arrows: false,
     slidesToShow: 1,
     asNavFor: '#photoslide',
-  });
+  }); */
   $("#photoslide").slick({
     dots: false,
     infinite: true,
