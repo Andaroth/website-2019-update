@@ -18,7 +18,7 @@
 <?php if($page=="about") { ?>
   <link rel="stylesheet" href="<?= V.'assets/css/devicon.css'?>">
 <?php } ?>
-  <link rel="stylesheet" href="<?= V.'assets/css/style.css'?>">
-  <link rel="stylesheet" media="screen and (max-width:850px)" href="<?= V.'assets/css/mobile.css'?>">
+  <link rel="stylesheet" href="<?= V.'assets/theme/css/style.css'?>">
+  <link rel="stylesheet" media="screen and (max-width:850px)" href="<?= V.'assets/theme/css/mobile.css'?>">
   <link rel="icon" type="image/gif" href="<?= IMG ?>ico/fav.gif" />
 </head>

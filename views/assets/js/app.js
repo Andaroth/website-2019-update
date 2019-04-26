@@ -30,6 +30,8 @@ $(document).ready(function(){
     console.log('sendMail(name,mail,msg)')
     if (!validateEmail(mail)) return false
     if (name && mail && msg && validateEmail(mail)) {
+      var sendBtnContent = document.querySelector('#sendmail').innerHTML
+      document.querySelector('#sendmail').innerHTML = 'Sending ...'
       var xhr = new XMLHttpRequest();
       xhr.open('POST', 'http://localhost/www2/api/mail.php', false); 
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -49,6 +51,7 @@ $(document).ready(function(){
           displayLength: 6000,
           html: resMsg
         })
+        document.querySelector('#sendmail').innerHTML = sendBtnContent
       }
 
       xhr.send(`name=${name}&mail=${mail}&msg=${msg}`);
