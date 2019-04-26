@@ -38,17 +38,18 @@ i.devicon > span.alt-tile
   background: $nice
   color: $light
   clear: both
+  height: auto
   width: auto
   max-width: 50%
   padding: 5px 10px
-  margin: 10px auto
+  margin: 12px auto
   text-transform: uppercase
   text-decoration: none
   border-bottom: 2px solid $detail
   border-radius: $bradius
   box-sizing: border-box
-  transition: background .5s border .5s
-  box-shadow: $elevation-1
+  transition: background-color .75s
+  // box-shadow: $elevation-1
   &:hover
     background: $detail
     text-decoration: none
@@ -68,7 +69,8 @@ img.small
   max-width: $maxw/6
   max-height: $maxw/6
 .shadebtn
-  background: linear-gradient(60deg,$lightnice,$nice,$nice)
+  background: $nice
+  background: $nice-gradient
 .scroller
   width: 100%
   font-size: 3em
@@ -112,11 +114,12 @@ $topbarH: 80px
   border-bottom: 1px solid $lightnice
   background: $dark07
   z-index: 100
-  box-shadow: $elevation-2
+  // box-shadow: $elevation-2
   h1
     margin: 0
     padding: 0
     line-height: $topbarH
+    font-size: 1.5em
   > *
     float: left
   .navigatelabel
@@ -154,6 +157,7 @@ $topbarH: 80px
 .visitlink
   display: block
   float: right
+  height: $topbarH
   width: 200px
   text-align: center
   border-left: 1px solid $lightnice
@@ -168,7 +172,8 @@ $topbarH: 80px
   i.visit
     font-size: 24px
   ul.visitmenu
-    display: block
+    display: flex
+    flex-direction: column
     position: fixed
     top: $topbarH
     right: 15px
@@ -202,7 +207,7 @@ $topbarH: 80px
       color: $detail
     ul.visitmenu
       transform: translate(0)
-      display: block
+      display: flex
 // Sections -------------------------------------------
 section
   display: block
@@ -284,6 +289,7 @@ section.landing
       max-width: 66%
       margin-top: 50px
       margin-bottom: 0
+      font-size: 1.5rem
     .btn
       border: 2px solid transparent
       border-bottom: 2px solid $detail
@@ -291,7 +297,7 @@ section.landing
         animation: none
         border: 2px solid $detail
 section.presentation
-  background: linear-gradient(160deg,$nice,$dark,$dark)
+  background: $darknice-gradient
   color: $light
   *.codepen
     height: 480px
@@ -309,12 +315,11 @@ section.about
     display: none !important
   .story-card
     margin: 16px auto
-    box-shadow: $elevation-1
+    background: $dark07
     h3
       background: $nice
       padding: 36px
-    > p, > ul
-      background: $dark07
+    p, ul
       padding: 12px
       margin: 0
       color: $light

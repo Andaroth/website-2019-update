@@ -109,19 +109,20 @@ section.screensmatrix
     border: none
   .visitlink, ul.visitmenu
     float: initial
-    left: 0
-    right: 0
+    left: 0 !important
+    right: 0 !important
   ul.visitmenu 
+    top: 64px !important
     li a
       height: 70px
       padding: 0 !important
       text-align: center
       line-height: 70px
       width: 100% !important
+      border-left: 0 !important
       &:hover, &:target, &:active
-        background: $light
-        color: $nice
-        border-left: 0 !important
+        background: $light !important
+        color: $dark
   .oneline
     display: block
     > *
