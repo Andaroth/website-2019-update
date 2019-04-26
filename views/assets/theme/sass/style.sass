@@ -45,7 +45,7 @@ i.devicon > span.alt-tile
   margin: 12px auto
   text-transform: uppercase
   text-decoration: none
-  border-bottom: 2px solid $detail
+  border-bottom: 2px solid $dark03
   border-radius: $bradius
   box-sizing: border-box
   transition: background-color .75s
@@ -56,6 +56,10 @@ i.devicon > span.alt-tile
   &:active
     transform: scale(.95)
     box-shadow: none
+    border: none
+.shadebtn
+  background: $nice
+  background: $nice-gradient
 .toast
   background: $detail
   color: $light
@@ -68,9 +72,6 @@ img.ico
 img.small
   max-width: $maxw/6
   max-height: $maxw/6
-.shadebtn
-  background: $nice
-  background: $nice-gradient
 .scroller
   width: 100%
   font-size: 3em
@@ -387,11 +388,9 @@ section.stillwonders
     max-width: 1200px
     .btn
       background: $dark03
-      border-color: $light07
       &:hover
         background: $dark07
         color: $detail
-        border-color: $detail
 section.animhearted 
   background: $nice
   article

@@ -102,7 +102,7 @@
         <img src="<?= IMG ?>normal/stopit.jpg" alt="Stop it" />
       </div>
       <div class="carousel-fixed-item center">
-        <a href="https://www.flickr.com/photos/axel-andaroth/" class="btn waves-effect scrollback">My flickr</a>
+        <a href="https://www.flickr.com/photos/axel-andaroth/" class="btn waves-effect scrollback">Visit my flickr</a>
       </div>
     </div>
     <!-- <div id="photoslide" class="photoslide center slider nomobile">
