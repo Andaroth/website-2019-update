@@ -29,4 +29,3 @@
   </a>
   <!--<a href="#visitmenu" id="visitlink" class="visitlink"><span class="and rotate">&and;</span> Visit !</a>-->
 </nav>
-<?php include(C."meiling.php"); ?>
