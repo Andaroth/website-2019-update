@@ -16,17 +16,16 @@
 <?php break;} ?>
     <li><a href="#contact" id="contactlink" class="contactlink">Contact<span class="nomobile"> me</span></a></li>
   </ul>
-  <div id="visitlink" class="visitlink">
+  <div id="visitlink" class="dropdown-trigger visitlink" data-target="visitmenu">
     <i class="fas fa-bars visit"></i> 
     <span>Visit !</span>
-    <div>
-      <ul id="visitmenu" class="visitmenu">
-        <li><a href="./">Homepage</a></li>
-        <li><a href="./?page=about">Who am I</a></li>
-        <li><a href="./?page=portfolio">Discover my work</a></li>
-        <li><a href="./shop">My store</a></li>
-      </ul>
-    </div>
+  </div>
+  <ul id="visitmenu" class="visitmenu dropdown-content">
+    <li><a href="./">Homepage</a></li>
+    <li><a href="./?page=about">Who am I</a></li>
+    <li><a href="./?page=portfolio">Discover my work</a></li>
+    <li><a href="./shop">My store</a></li>
+  </ul>
   </a>
   <!--<a href="#visitmenu" id="visitlink" class="visitlink"><span class="and rotate">&and;</span> Visit !</a>-->
 </nav>

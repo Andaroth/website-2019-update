@@ -50,7 +50,7 @@ i.devicon > span.alt-tile
   box-sizing: border-box
   transition: background-color .75s
   // box-shadow: $elevation-1
-  &:hover
+  &:hover, &:active, &:focus
     background: $detail
     text-decoration: none
   &:active
@@ -171,33 +171,6 @@ $topbarH: 80px
     font-family: Ubuntu
   i.visit
     font-size: 24px
-  ul.visitmenu
-    display: flex
-    flex-direction: column
-    position: fixed
-    top: $topbarH
-    right: 15px
-    padding: 0
-    margin: 0
-    max-height: calc(100vh - 80px)
-    overflow-x: hidden
-    overflow-y: auto
-    background: $dark07
-    transform: translateY(-500px)
-    transition: .25s ease-out
-    z-index: -5
-    box-shadow: $elevation-2
-    li
-      display: block
-    li a
-      display: block
-      padding: 12px
-      width: 200px
-      border-left: 1px solid $lightnice
-      transition: .25s ease-out
-      &:hover
-        border-left: 5px solid $detail
-        background: $dark
   &:hover
     span
       color: $detail
@@ -208,6 +181,23 @@ $topbarH: 80px
     ul.visitmenu
       transform: translate(0)
       display: flex
+ul.visitmenu
+  background: $dark07
+  top: $topbarH !important
+  padding: 0
+  margin: 0
+  li
+    display: block
+  li a
+    display: block
+    color: $light
+    width: 200px
+    border-left: 1px solid $lightnice
+    transition: .25s ease-out
+    &:hover
+      border-left: 5px solid $detail
+      border-bottom: none
+      background: $dark
 // Sections -------------------------------------------
 section
   display: block
@@ -221,6 +211,7 @@ section
     margin: 0 auto
     text-align: center
     color: $detail
+    font-size: 1.5em
   h2
     font-size: 2em
   p
@@ -239,7 +230,7 @@ section
     margin-left: 50%
   &:last-child
     background: $nice
-    margin-bottom: $marginfoot
+    margin-bottom: calc(100vh - 64px)
     box-shadow: 0 3px 5px $dark07
     &:after
       display: block
@@ -339,33 +330,19 @@ section.mozaic
     margin: 8px auto
   h3
     margin: 16px auto 8px auto
-  .grid > *
-    color: $light
-    border: 1px solid $lightnice
-    border-radius: $bradius
-    height: ($maxw/4)-7.5px
-    strong
-      color: $detail
-  .journey h4
-    color: $light
-    margin: 10px auto
-  .learned > *
-    display: flex
-    transition: .5s ease
-    & > i
-      margin: auto
-    span.alt-tile
-      display: block
-      position: relative
-      font-size: 14px
-      font-family: $roboto
-      margin-top: 10px
-      padding: 10px 0
+  .container
+    max-width: 800px
+    .col
+      margin-bottom: 8px
 .skill-tile
   padding: 8px
   transition: 1.75s ease-out
   background: $light03
-  box-shadow: $elevation-1
+  width: 100%
+  color: white
+  strong
+    color: $detail
+    font-weight: bold
 .nomaxhskill
   height: auto !important
 section.strip
@@ -406,11 +383,15 @@ section.screensmatrix
     top: -75px*/
 section.stillwonders
   background: $dark
-  > *
-    margin: 16px auto
-  .viewphotoslide img
-    width: 100%
-    max-height: $maxw*16/9
+  .viewphotoslide
+    max-width: 1200px
+    .btn
+      background: $dark03
+      border-color: $light07
+      &:hover
+        background: $dark07
+        color: $detail
+        border-color: $detail
 section.animhearted 
   background: $nice
   article
@@ -533,7 +514,8 @@ footer.footer
         border-bottom: 2px solid $detail
       &:active, &:focus
         background: $light
-        border-bottom: 4px solid $detail
+        border-bottom: 2px solid $detail !important
+        box-shadow: none !important
     textarea
       margin: 10px auto !important
       max-width: 460px
@@ -547,6 +529,7 @@ footer.footer
       border-radius: $bradius
       font-size: 24px
       line-height: 56px
+      cursor: initial
       i
         font-size: 24px
         color: $dark
@@ -555,6 +538,7 @@ footer.footer
         border: 2px solid $detail
         color: $detail
         box-shadow: $elevation-1
+        cursor: pointer
         i
           color: $detail
         &:hover, &:active, &:focus
@@ -571,6 +555,7 @@ footer.footer
       border: none
       border-radius: $bradius
       outline: 0
+      box-sizing: border-box
       &:hover, &:target, &:active
         outline: 0
   ul.socials

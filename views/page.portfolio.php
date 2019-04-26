@@ -7,25 +7,7 @@
   <section id="screensmatrix" class="screensmatrix fullh">
     <h2 class="hidden">My creations</h2>
     <div id="webslide" class="webslide center slider">
-      <?php /* <div class="tile-slide">
-        <a href="https://luge.studio/" class="tile">
-          <div class="description">
-            <h3>Lüge Studio</h3>
-            <p>Production company made by my associates. I bought and edited a template and then made some PHP integration. </p>
-          </div>
-          <img src="<?= IMG ?>mini/lugestudio.jpg" alt="Lüge Studio" />
-        </a>
-      </div> -->
-      <!-- <div class="tile-slide">
-        <a href="https://charlywellz.com/" class="tile">
-          <div class="description">
-            <h3>Charly Wellz</h3>
-            <p>Custom brand's webshop I made with WooCommerce. I used to work with this sunglasses brand.</p>
-          </div>
-          <img src="<?= IMG ?>mini/charly.jpg" alt="CharlyWellz" />
-        </a>
-      </div> */ ?>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="http://sk8boarders.be/" class="tile">
          <div class="description">
             <h3>Sk8boarders.be</h3>
@@ -34,7 +16,7 @@
           <img src="<?= IMG ?>mini/sk8boarders.jpg" alt="sk8boarders_be" />
         </a>
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="https://axelfiolle.be/pacpoule" class="tile">
          <div class="description">
             <h3>PacPoule</h3>
@@ -43,7 +25,7 @@
           <img src="<?= IMG ?>mini/pacpoule.jpg" alt="Pac Poule" />
         </a>
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="./shop" class="tile">
           <div class="description">
             <h3>My own store</h3>
@@ -52,7 +34,7 @@
           <img src="<?= IMG ?>mini/shop.png" alt="PrestaShop" />
         </a>
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="./shoeconceptor" class="tile">
           <div class="description">
             <h3>Shoe conceptor</h3>
@@ -61,7 +43,7 @@
           <img src="<?= IMG ?>normal/shoeconceptor.png" alt="Shoe conceptor" />
         </a>
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="https://www.trimala.net/" class="tile">
           <div class="description">
             <h3>Trimala Network</h3>
@@ -70,7 +52,7 @@
           <img src="<?= IMG ?>mini/trimala.png" alt="Trimala Network" />
         </a>
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="../learning/curiculum" class="tile">
           <div class="description">
             <h3>My online CV</h3>
@@ -79,7 +61,7 @@
           <img src="<?= IMG ?>normal/curiculum.png" alt="My online CV" />
         </a>
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="https://andaroth.github.io/Learning-Environment/7-exercice-star-wars/" class="tile">
          <div class="description">
             <h3>Star Wars Scroller</h3>
@@ -88,7 +70,7 @@
           <img src="<?= IMG ?>mini/starwars.jpg" alt="Star Wars Scroller" />
         </a>
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <a href="https://andaanda.tumblr.com/" class="tile">
           <div class="description">
             <h3>My Tumblr</h3>
@@ -106,35 +88,37 @@
   </section>
   <section id="stillwonders" class="stillwonders">
     <h2 class="hidden">My photographs</h2>
-    <div id="viewphotoslide" class="viewphotoslide">
-      <div class="tile-slide">
+    <div id="viewphotoslide" class="carousel carousel-slider viewphotoslide">
+      <div class="carousel-item">
         <img src="<?= IMG ?>normal/heavier.jpg" alt="Heavier" />
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <img src="<?= IMG ?>normal/golden.jpg" alt="Golden" />
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <img src="<?= IMG ?>normal/guardian.jpg" alt="Guardian" />
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <img src="<?= IMG ?>normal/stopit.jpg" alt="Stop it" />
       </div>
+      <div class="carousel-fixed-item center">
+        <a href="https://www.flickr.com/photos/axel-andaroth/" class="btn waves-effect scrollback">My flickr</a>
+      </div>
     </div>
-    <div id="photoslide" class="photoslide center slider nomobile">
-      <div class="tile-slide">
+    <!-- <div id="photoslide" class="photoslide center slider nomobile">
+      <div class="carousel-item">
         <img src="<?= IMG ?>mini/heavier.jpg" alt="Heavier" />
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <img src="<?= IMG ?>mini/golden.jpg" alt="Golden" />
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <img src="<?= IMG ?>mini/guardian.jpg" alt="Guardian" />
       </div>
-      <div class="tile-slide">
+      <div class="carousel-item">
         <img src="<?= IMG ?>mini/stopit.jpg" alt="Stop it" />
       </div>
-    </div>
-    <a href="#animhearted" class="btn shadebtn scrollback">My videos</a>
+    </div> -->
   </section>
   <section id="myvideos" class="strip myvideos">
     <h2><i class="fa fa-fast-forward" aria-label="video-camera"><span class="jhide">&#128249;</span></i> Anim-hearted</h2>
