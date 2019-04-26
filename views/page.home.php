@@ -26,13 +26,13 @@
         <p>With more than <strong>ten years of experience in web design and developement</strong>, I can help you to <strong>create your own website</strong> and assert your presence online.</p>
       </div>
     </div>
-    <a href="./about" class="btn waves-effect smallbtn shadebtn">About me</a>
+    <a href="./page-about" class="btn waves-effect smallbtn shadebtn">About me</a>
     <!--<i class="fas fa-trophy" aria-label="trophy"><span class="jhide">&#127942;</span></i>-->
     <!--<p>I started making websites when I was just a kid. <br>With more than <strong>ten years of experience in web design and developement</strong>, I can help you to <strong>create your own website</strong> and assert your presence online.</p>-->
   </section>
   <section id="skills" class="skills clearfix">
     <h2>My skills</h2>
-    <h3>A little graphic worth <a href="./about">a long talk</a></h3>
+    <h3>A little graphic worth <a href="./page-about">a long talk</a></h3>
     <div id="canvagrid" class="canvagrid grid two-c">
       <div id="chartTrigger">
         <h4>Front-end</h4>
@@ -56,7 +56,7 @@
       </div>
       
     </div>
-    <a href="./portfolio" class="btn waves-effect shadebtn">Check what I made</a>
+    <a href="./page-portfolio" class="btn waves-effect shadebtn">Check what I made</a>
     
   </section>
 </main>
