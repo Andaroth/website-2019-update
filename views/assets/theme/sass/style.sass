@@ -45,7 +45,7 @@ i.devicon > span.alt-tile
   margin: 12px auto
   text-transform: uppercase
   text-decoration: none
-  border-bottom: 2px solid $dark03
+  border: 2px solid $detail
   border-radius: $bradius
   box-sizing: border-box
   transition: background-color .75s
@@ -56,7 +56,7 @@ i.devicon > span.alt-tile
   &:active
     transform: scale(.95)
     box-shadow: none
-    border: none
+    border: 2px solid transparent
 .shadebtn
   background: $nice
   background: $nice-gradient
@@ -103,7 +103,7 @@ img.small
     float: left
     margin: 0 10px
 // Navbar -------------------------------------------
-$topbarH: 80px
+$topbarH: 64px
 .alltopbar
   display: block
   position: fixed
@@ -199,10 +199,15 @@ ul.visitmenu
       border-left: 5px solid $detail
       border-bottom: none
       background: $dark
+
+
+main.homepage
+  background: $dark url("../../img/design/family.jpg") center center fixed no-repeat
+  background-size: cover
 // Sections -------------------------------------------
 section
   display: block
-  background: $light
+  background: transparent
   text-align: center
   padding: 80px 24px
   clear: both
@@ -231,7 +236,7 @@ section
     margin-left: 50%
   &:last-child
     background: $nice
-    margin-bottom: calc(100vh - 64px)
+    margin-bottom: calc(100vh + 128px) // 64px :after background margin
     box-shadow: 0 3px 5px $dark07
     &:after
       display: block
@@ -239,7 +244,7 @@ section
       position: absolute
       left: 0
       width: 100%
-      height: 160px
+      height: 128px
       background: url("../../img/design/about_endbg.png") top left repeat-x
       transform: translateY(60px)
 .homeChart
@@ -248,9 +253,7 @@ section.landing
   display: flex
   flex-direction: row
   justify-content: flex-end
-  background: $dark url("../../img/design/family.jpg") center center fixed no-repeat
-  background-size: cover
-  min-height: calc(100vh - 160px)
+  min-height: calc(100vh - calc(#{$topbarH} * 2))
   color: $light
   padding: 20px 40px
   margin-top: $topbarH
@@ -288,14 +291,31 @@ section.landing
       &:hover
         animation: none
         border: 2px solid $detail
-section.presentation
+section.tenyears
+  position: absolute
+  top: calc(100vh - #{$topbarH} - 64px)
+  width: calc(50vw - 48px)
+  padding: 24px
+  left: 80px
   background: $darknice-gradient
   color: $light
+  border: none
+  border-radius: $bradius
   *.codepen
     height: 480px
   p
     max-width: $maxw/2
     margin: 16px auto
+    &.codepen
+      border: none !important
+      margin: 0 auto !important
+      width: 100%
+      background: $light03
+section.skills
+  background: $dark07
+  padding: 24px 24px 24px 50vw
+  min-height: 560px
+section.story
 section.about
   display: flex
   flex-direction: column
@@ -432,6 +452,12 @@ section
 section.fullh
   min-height: 100vh
 // Grids -------------------------------------------
+.flex
+  display: flex
+.fdr
+  flex-direction: row
+.jcc
+  justify-content: center
 .grid
   display: block
   width: $maxw
@@ -638,6 +664,7 @@ footer.footer
       margin-bottom: 160px
   footer.footer
     position: relative
+    z-index: 10
 // 1000px queries
 @media screen and (max-width:$mviewpw)
   .alltopbar h1
