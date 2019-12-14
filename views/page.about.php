@@ -68,21 +68,21 @@
         <div class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="fas fa-code devicon big"></i><span class="alt-tile">Worked professionnally with <strong>PolymerJS</strong></span>
+            <i class="fab fa-vuejs devicon big"></i><span class="alt-tile">Lead developer on some <strong>VueJS</strong> project</span>
           </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="devicon-react-plain devicon big"></i><span class="alt-tile">Worked on multiple <strong>React</strong> projects</span>
+            <i class="devicon-react-plain devicon big"></i><span class="alt-tile">Made multiple <strong>React</strong> applications</span>
           </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="fab fa-angular devicon big"></i><span class="alt-tile">Started <strong>Angular</strong> a few moments ago</span>
+            <i class="fab fa-angular devicon big"></i><span class="alt-tile">Can handle <strong>Angular</strong> with ease</span>
           </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
         <div class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="fas fa-graduation-cap devicon big"></i><span class="alt-tile">Keep learning <strong>since 2005</strong></span>
+            <i class="fas fa-graduation-cap devicon big"></i><span class="alt-tile">Keep learning to code <strong>since 2005</strong></span>
           </div>
           </div>
         </div>
