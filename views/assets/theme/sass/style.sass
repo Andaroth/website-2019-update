@@ -213,6 +213,9 @@ section
   clear: both
   z-index: 5
   border-bottom: 3px solid $detail
+  &.floating-title
+    position: absolute
+    width: 100vw
   h2, h3, h4, h5, h6
     margin: 0 auto
     text-align: center
@@ -378,8 +381,6 @@ section.strip
 section.mywork
   margin-top: $topbarH
   background: url("../../img/design/bulbs.jpg") center fixed no-repeat
-section.myphotos
-  background: url("../../img/design/parking.jpg") center fixed no-repeat
 section.myvideos
   background: url("../../img/design/colors.jpg") center fixed no-repeat
 // portfolio

@@ -82,7 +82,7 @@
     </div>
     <a href="#stillwonders" class="btn shadebtn scrollback">My photos</a>
   </section>
-  <section id="myphotos" class="strip myphotos">
+  <section id="myphotos" class="strip floating-title myphotos">
     <h2><i class="fa fa-camera-retro" aria-label="camera"><span class="jhide">&#128247;</span></i> Still wonders</h2>
     <h3>The admiration of a moment, a scene, an emotion</h3>
   </section>
