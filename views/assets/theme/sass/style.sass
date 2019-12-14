@@ -410,9 +410,23 @@ section.stillwonders
     max-width: none
     .btn
       background: $dark03
+      border: 0
       &:hover
         background: $dark07
         color: $detail
+    .carousel-item
+      min-height: 640px
+      height: 100vh
+      background-size: cover
+      background-position: center
+      &.heavier
+        background-image: url('../../img/normal/heavier.jpg')
+      &.golden
+        background-image: url('../../img/normal/golden.jpg')
+      &.guardian
+        background-image: url('../../img/normal/guardian.jpg')
+      &.stopit
+        background-image: url('../../img/normal/stopit.jpg')
 section.animhearted 
   background: $nice
   article
