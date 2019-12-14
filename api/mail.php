@@ -46,7 +46,7 @@ if ("POST" == $_SERVER["REQUEST_METHOD"]) {
                 $message.= $passage_ligne."--".$boundary.$passage_ligne;
                 
                 $sendMail = mail("ax.fiolle@gmail.com",$mailName." (".$mailAdres.")",$message,$header);
-                
+
                 if ($sendMail) {
                     http_response_code(200);
                 } else {

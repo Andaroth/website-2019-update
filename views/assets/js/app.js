@@ -33,7 +33,7 @@ $(document).ready(function(){
       var sendBtnContent = document.querySelector('#sendmail').innerHTML
       document.querySelector('#sendmail').innerHTML = 'Sending ...'
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', 'http://localhost/www2/api/mail.php', false); 
+      xhr.open('POST', 'https://axelfiolle.be/api/mail.php', false); 
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
       var resMsg = ''
@@ -64,7 +64,7 @@ $(document).ready(function(){
   $(document).scroll(function(e) {
     $("span.and").addClass("rotate");
     scrollTop = $(document).scrollTop();
-    console.log("scrollTop : "+scrollTop);
+    // console.log("scrollTop : "+scrollTop);
     if (scrollTop <= 100) {
       $("#landingscroll").removeClass("hide");
       $("footer").addClass("hidden");
@@ -97,7 +97,7 @@ $(document).ready(function(){
     $("#mailtab").addClass("hidden");
   });
   $("#sendmail").click((e)=>{
-    console.log('$("#sendmail").click')
+    // console.log('$("#sendmail").click')
     e.preventDefault();
     var name = $("#nameinput")[0].value
     var mail = $("#mailinput")[0].value
@@ -122,14 +122,18 @@ $(document).ready(function(){
       $("#sendmail").addClass("pulse");
       $("#sendmail").prop("disabled",false);
       $("#sendmail").removeProp("disabled");
-      console.log("yup");
+      // console.log("yup");
     } else {
       $("#sendmail").removeClass("enabled");
       $("#sendmail").removeClass("pulse");
       $("#sendmail").prop("disabled",true);
-      console.log("nope");
+      // console.log("nope");
     }
   });
+  $("#msgmail").keydown(()=>{
+    // console.log('Ouïlle')
+    setTimeout(()=>$("#msgmail")[0].style.height = $("#msgmail")[0].scrollHeight + 'px',0)
+  })
   // HANDLE ---------------------------------------
   /*$("#msgmail").resize(function(){
     $(".section:last-child").css("margin-bottom",$("#footer").heigh());
