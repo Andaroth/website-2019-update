@@ -1,9 +1,9 @@
 $(document).ready(function(){
   // AT START ---------------------------------------
-  var vpHeight = $(window).height();
-  var vpWidth = $(window).width();
-  var docHeight = $(document).height();
-  var scrollTop = $(document).scrollTop();
+  let vpHeight = $(window).height();
+  let vpWidth = $(window).width();
+  let docHeight = $(document).height();
+  let scrollTop = $(document).scrollTop();
   $(".jhide").addClass("hidden");
   $(".jpacity").addClass("nopacity");
   if (scrollTop <= 100) {
@@ -15,7 +15,7 @@ $(document).ready(function(){
   }
   // FUNCTIONS ---------------------------------------
   function scrollTo(target,speed,fade) {
-    var targetPos = $(target).offset().top;
+    const targetPos = $(target).offset().top;
     $("html, body").animate(
       {
         scrollTop: targetPos
@@ -23,28 +23,28 @@ $(document).ready(function(){
     ).fadeIn(fade);
   }
   function validateEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		return regex.test(email);
   }
   function sendMail(name,mail,msg) {
     console.log('sendMail(name,mail,msg)')
     if (!validateEmail(mail)) return false
     if (name && mail && msg && validateEmail(mail)) {
-      var sendBtnContent = document.querySelector('#sendmail').innerHTML
+      const sendBtnContent = document.querySelector('#sendmail').innerHTML
       document.querySelector('#sendmail').innerHTML = 'Sending ...'
-      var xhr = new XMLHttpRequest();
+      const xhr = new XMLHttpRequest();
       xhr.open('POST', 'https://axelfiolle.be/api/mail.php', false); 
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
-      var resMsg = ''
-      var mailTo = ''
+      let resMsg = ''
+      let mailTo = ''
 
       xhr.onreadystatechange = function() {
         if(xhr.readyState == 4 && xhr.status === 200) {
           console.log("Réponse reçue: %s", xhr.responseText);
           resMsg = 'Thanks for your confidence ! Your message has been sent to the mailman :)';
         } else {
-          console.log("Status de la réponse: %d (%s)", xhr.status, xhr.statusText);
+          console.warn("Status de la réponse: %d (%s)", xhr.status, xhr.statusText);
           resMsg = 'I\'m sorry but it didn\'t work. You can join me at this adress instead : ax.fiolle@gmail.com';
         }
         M.toast({
@@ -80,7 +80,7 @@ $(document).ready(function(){
   // CLICKS ---------------------------------------
   $(".scrollback").click(function(e) {
     e.preventDefault();
-    var target = $(this).attr("href");
+    const target = $(this).attr("href");
     scrollTo(target,1000,500);
   })
   /* $("#visitlink").click(function(e) {
@@ -99,9 +99,9 @@ $(document).ready(function(){
   $("#sendmail").click((e)=>{
     // console.log('$("#sendmail").click')
     e.preventDefault();
-    var name = $("#nameinput")[0].value
-    var mail = $("#mailinput")[0].value
-    var msg = $("#msgmail")[0].value
+    const name = $("#nameinput")[0].value
+    const mail = $("#mailinput")[0].value
+    const msg = $("#msgmail")[0].value
     if (name && mail && msg && name.length && mail.length && msg.length) {
       sendMail(name,mail,msg)
     }
