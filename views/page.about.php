@@ -68,14 +68,14 @@
         <div class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="fab fa-vuejs devicon big"></i><span class="alt-tile">Lead developer on some <strong>VueJS</strong> project</span>
+            <i class="fab fa-vuejs devicon big"></i><span class="alt-tile">Lead developer on multiple <strong>VueJS</strong> <a href="https://timbtrack.com/">projects</a></span>
           </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="devicon-react-plain devicon big"></i><span class="alt-tile">Made multiple <strong>React</strong> applications</span>
+            <i class="devicon-react-plain devicon big"></i><span class="alt-tile">Worked on several <strong>React</strong> <a href="https://constructr.be/">applications</a></span>
           </div>
           </div>
         </div>
