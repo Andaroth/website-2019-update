@@ -20,14 +20,12 @@
     <div id="mozaicTrigger"></div>
     <div class="container">
       <div id="journey" class="row journey">
-        <div class="row">
         <div class="col s12 m6 offset-m3">
           <div class="card skill-tile dark-nice">
           <div class="card-content">
             <h4>Lead developer at <a href="https://timbtrack.com/"><abbr title="International Business Renaissance">IBR</abbr></a></h4><img src="<?= IMG.'/ico/logo-timbtrack-block-white.png' ?>" alt="Timbtrack" class="ico small">
           </div>
           </div>
-        </div>
         </div>
         <div class="col s12 m6">
           <div class="card skill-tile nomaxhskill">
