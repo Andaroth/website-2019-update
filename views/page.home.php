@@ -27,27 +27,15 @@
   <section id="skills" class="skills clearfix">
     <h2>My skills</h2>
     <p>A little graphic worth <a href="./page-about">a long talk</a></p>
-    <div id="canvagrid" class="flex fdr jcc">
-      <div id="chartTrigger">
-        <h4>Front-end</h4>
-        <ul class="jhide">
-          <li>Worked professionnally with Polymer</li>
-          <li>Spent months on React</li>
-          <li>Training in Angular</li>
-          <li>Can make SCSS and SASS work like a charm</li>
-          <li>Excellent in HTML and CSS</li>
-        </ul>
-        <canvas id="frontendChart" class="homeChart"></canvas>
-      </div>
-      <div>
-        <h4>Back-end</h4>
-        <ul class="jhide">
-          <li>Good use of Symfony</li>
-          <li>Can write NodeJS backend</li>
-          <li>Confirmed PHP doer</li>
-        </ul>
-        <canvas id="backendChart" class="homeChart"></canvas>
-      </div>
+    <div id="chartTrigger">
+      <ul class="jhide">
+        <li>Worked professionnally with Polymer</li>
+        <li>Spent months on React</li>
+        <li>Training in Angular</li>
+        <li>Can make SCSS and SASS work like a charm</li>
+        <li>Excellent in HTML and CSS</li>
+      </ul>
+      <canvas id="frontendChart" class="homeChart"></canvas>
     </div>
   </section>
   <section class="homegrid">
