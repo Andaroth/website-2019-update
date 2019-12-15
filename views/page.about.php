@@ -117,7 +117,7 @@
         <div class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="fas fa-graduation-cap devicon big"></i><span class="alt-tile">Keep learning to code <strong>since 2005</strong></span>
+            <i class="fas fa-server devicon big"></i><span class="alt-tile"><strong>MySQL</strong> and <strong>MongoDB</strong> are my first choices</span>
           </div>
           </div>
         </div>
