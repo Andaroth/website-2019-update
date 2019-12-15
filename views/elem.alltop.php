@@ -26,6 +26,5 @@
     <li><a href="./page-portfolio">Discover my work</a></li>
     <li><a href="./shop">My store</a></li>
   </ul>
-  </a>
   <!--<a href="#visitmenu" id="visitlink" class="visitlink"><span class="and rotate">&and;</span> Visit !</a>-->
 </nav>

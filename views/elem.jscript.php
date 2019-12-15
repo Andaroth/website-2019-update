@@ -26,3 +26,4 @@
 <?php } ?>
 <!-- My Scripts -->
 <script src="<?= JS ?>/App/app.js"></script>
+<script src="<?= JS ?>/App/features/sendMail.js"></script>
