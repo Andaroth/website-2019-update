@@ -18,6 +18,7 @@
 <!-- Specific page scripts -->
 <?php if($page=="portfolio") { ?>
 <script src="<?= JS ?>slick.min.js"></script>
+<script src="<?= JS ?>/App/elem.slick.js"></script>
 <?php } ?>
 <?php if($page=="home") { ?>
 <script src="<?= JS ?>chart.js"></script>
