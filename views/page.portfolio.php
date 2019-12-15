@@ -82,24 +82,24 @@
     </div>
     <a href="#stillwonders" class="btn shadebtn scrollback">My photos</a>
   </section>
-  <section id="myphotos" class="strip myphotos">
+  <section id="myphotos" class="strip floating-title myphotos">
     <h2><i class="fa fa-camera-retro" aria-label="camera"><span class="jhide">&#128247;</span></i> Still wonders</h2>
     <h3>The admiration of a moment, a scene, an emotion</h3>
   </section>
   <section id="stillwonders" class="stillwonders">
     <h2 class="hidden">My photographs</h2>
     <div id="viewphotoslide" class="carousel carousel-slider viewphotoslide">
-      <div class="carousel-item">
-        <img src="<?= IMG ?>normal/heavier.jpg" alt="Heavier" />
+      <div class="carousel-item heavier">
+        <!-- <img src="<\?= IMG ?>normal/heavier.jpg" alt="Heavier" /> -->
       </div>
-      <div class="carousel-item">
-        <img src="<?= IMG ?>normal/golden.jpg" alt="Golden" />
+      <div class="carousel-item golden">
+        <!-- <img src="<\?= IMG ?>normal/golden.jpg" alt="Golden" /> -->
       </div>
-      <div class="carousel-item">
-        <img src="<?= IMG ?>normal/guardian.jpg" alt="Guardian" />
+      <div class="carousel-item guardian">
+        <!-- <img src="<\?= IMG ?>normal/guardian.jpg" alt="Guardian" /> -->
       </div>
-      <div class="carousel-item">
-        <img src="<?= IMG ?>normal/stopit.jpg" alt="Stop it" />
+      <div class="carousel-item stopit">
+        <!-- <img src="<\?= IMG ?>normal/stopit.jpg" alt="Stop it" /> -->
       </div>
       <div class="carousel-fixed-item center">
         <a href="https://www.flickr.com/photos/axel-andaroth/" class="btn waves-effect scrollback">Visit my flickr</a>
@@ -107,16 +107,16 @@
     </div>
     <!-- <div id="photoslide" class="photoslide center slider nomobile">
       <div class="carousel-item">
-        <img src="<?= IMG ?>mini/heavier.jpg" alt="Heavier" />
+        <img src="<\?= IMG ?>mini/heavier.jpg" alt="Heavier" />
       </div>
       <div class="carousel-item">
-        <img src="<?= IMG ?>mini/golden.jpg" alt="Golden" />
+        <img src="<\?= IMG ?>mini/golden.jpg" alt="Golden" />
       </div>
       <div class="carousel-item">
-        <img src="<?= IMG ?>mini/guardian.jpg" alt="Guardian" />
+        <img src="<\?= IMG ?>mini/guardian.jpg" alt="Guardian" />
       </div>
       <div class="carousel-item">
-        <img src="<?= IMG ?>mini/stopit.jpg" alt="Stop it" />
+        <img src="<\?= IMG ?>mini/stopit.jpg" alt="Stop it" />
       </div>
     </div> -->
   </section>

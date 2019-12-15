@@ -213,6 +213,9 @@ section
   clear: both
   z-index: 5
   border-bottom: 3px solid $detail
+  &.floating-title
+    position: absolute
+    width: 100%
   h2, h3, h4, h5, h6
     margin: 0 auto
     text-align: center
@@ -382,8 +385,6 @@ section.strip
 section.mywork
   margin-top: $topbarH
   background: url("../../img/design/bulbs.jpg") center fixed no-repeat
-section.myphotos
-  background: url("../../img/design/parking.jpg") center fixed no-repeat
 section.myvideos
   background: url("../../img/design/colors.jpg") center fixed no-repeat
 // portfolio
@@ -408,13 +409,28 @@ section.screensmatrix
     top: -75px*/
 section.stillwonders
   background: $dark
+  padding: 0
   .viewphotoslide
-    max-width: 1200px
+    max-width: none
     .btn
       background: $dark03
+      border: 0
       &:hover
         background: $dark07
         color: $detail
+    .carousel-item
+      min-height: 640px
+      height: 100vh
+      background-size: cover
+      background-position: center
+      &.heavier
+        background-image: url('../../img/normal/heavier.jpg')
+      &.golden
+        background-image: url('../../img/normal/golden.jpg')
+      &.guardian
+        background-image: url('../../img/normal/guardian.jpg')
+      &.stopit
+        background-image: url('../../img/normal/stopit.jpg')
 section.animhearted 
   background: $nice
   article
