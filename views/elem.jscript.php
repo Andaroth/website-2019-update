@@ -16,5 +16,5 @@
 <script src="<?= JS ?>/App/app.js"></script>
 <?php if($page=="home") { ?>
 <script src="<?= JS ?>chart.js"></script>
-<script src="<?= JS ?>elem.chart.js"></script>
+<script src="<?= JS ?>/App/elem.chart.js"></script>
 <?php } ?>
