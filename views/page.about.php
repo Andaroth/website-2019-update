@@ -16,34 +16,34 @@
   </section>
   <section id="mozaic" class="mozaic">
     <h2>Trip to knowledge</h2>
-    <h3>1. Being at the right place at the right moment</h3>
-    <div id="mozaicTrigger"></div>
+    <h3>The travel consists in being at the right place at the right moment</h3>
+    <!-- <div id="mozaicTrigger"></div> -->
     <div class="container">
       <div id="journey" class="row journey">
         <article class="col s12 m6 offset-m3">
-          <div class="card skill-tile dark-nice">
+          <div class="card skill-tile dark-nice nomaxhskill">
           <div class="card-content">
-            <h4>Lead developer at <a href="https://timbtrack.com/"><abbr title="International Business Renaissance">IBR</abbr></a></h4><img src="<?= IMG.'/ico/logo-timbtrack-block-white.png' ?>" alt="Timbtrack" class="ico small">
+            <h4>Lead developer at <a href="https://timbtrack.com/"><abbr title="International Business Renaissance">IBR</abbr></a>, from 2019 to now</h4><img src="<?= IMG.'/ico/logo-timbtrack-block-white.png' ?>" alt="Timbtrack" class="ico small">
           </div>
           </div>
         </article>
         <article class="col s12 m6">
-          <div class="card skill-tile nomaxhskill">
+          <div class="card skill-tile dark nomaxhskill">
             <div class="card-content">
-              <h4>Mixed all knowledge at BeCode, 2017-2018</h4><img class="ico small" src="<?= IMG.'ico/becodeorg.png' ?>" alt="BeCode">
+              <h4>Mixed all knowledge at <a href="https://becode.org/">BeCode</a>, 2017-2018</h4><img class="ico small" src="<?= IMG.'ico/becodeorg.png' ?>" alt="BeCode">
             </div>
           </div>
         </article>
         <article class="col s12 m6">
-          <div class="card skill-tile nomaxhskill">
+          <div class="card skill-tile dark nomaxhskill">
             <div class="card-content">
-              <h4>Studied at Albert Jacquard, 2013 to 2016</h4><img class="ico small" src="<?= IMG.'ico/heaj.png' ?>" alt="HEAJ">
+              <h4>Studied at <a href="https://www.heaj.be/">Albert Jacquard</a>, 2013 to 2016</h4><img class="ico small" src="<?= IMG.'ico/heaj.png' ?>" alt="HEAJ">
             </div>
           </div>
         </article>
       </div>
     </div>
-    <h3 class="clearfix">2. Start from scratch</h3>
+    <h3 class="clearfix">1. Start from scratch</h3>
     <div class="container">
       <div id="scratch" class="row learned">
         <article class="col s12 m4">
@@ -69,7 +69,7 @@
         </article>
       </div>
     </div>
-    <h3 class="clearfix">3. Learn frameworks</h3>
+    <h3 class="clearfix">2. Use frameworks</h3>
     <div class="container">
       <div id="frameworks" class="row learned">
         <article class="col s12 m4">
@@ -95,7 +95,7 @@
         </article>
       </div>
     </div>
-    <h3 class="clearfix">4. Get more skills</h3>
+    <h3 class="clearfix">3. Get into more stack</h3>
     <div class="container">
       <div id="more" class="row learned">
         <article class="col s12 m4">
@@ -121,6 +121,18 @@
         </article>
       </div>
     </div>
+    <!-- <h3 class="clearfix">4. Learn everything</h3>
+    <div class="container">
+      <div id="everything" class="row learned">
+        <article class="col s12 m4">
+          <div class="card skill-tile">
+          <div class="card-content">
+          <i class="fab fa-linux devicon"></i><span class="alt-tile">Excellent <strong>Linux</strong> user, can handle any distribution</span>
+          </div>
+          </div>
+        </article>
+      </div>
+    </div> -->
     <a href="./page-portfolio" class="btn waves-effect shadebtn clearfix">My portfolio</a>
   </section>
 </main>
