@@ -6,8 +6,8 @@ $(document).ready(function(){
     infinite: true,
     centerMode: true,
     slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
+    // autoplaySpeed: 2000,
   });
   //photo 
   $("#viewphotoslide").carousel({

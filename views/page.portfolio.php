@@ -1,95 +1,54 @@
 <?php include(V."elem.alltop.php"); ?>
 <main>
-  <section id="mywork" class="strip mywork">
-    <h2><i class="fa fa-code" aria-label="code-tag"><span class="jhide">&lt;&sol;&gt;</span></i> Web's matrix</h2>
-    <h3>Discover the products of my love of coding.</h3>
-  </section>
   <section id="screensmatrix" class="screensmatrix fullh">
-    <h2 class="hidden">My creations</h2>
-    <div id="webslide" class="webslide center slider">
-    <div class="carousel-item">
-        <a href="https://covisiere.be/" class="tile">
-         <div class="description">
+    <div class="strip">
+      <h2><i class="fa fa-code" aria-label="code-tag"><span class="jhide">&lt;&sol;&gt;</span></i> Web's matrix</h2>
+      <h3>Discover the products of my love of coding.</h3>
+    </div>
+    <div id="webslide" class="webslide center carousel-slider">
+      <div class="carousel-item">
+        <div class="tile">
             <h3>Covisière</h3>
-            <p>Recently made a single one page with my designer as Timbtrack. We sell protections to prevent Covid-19 propagation. </p>
-          </div>
-          <img src="<?= IMG ?>mini/covisiere.png" alt="covisiere" />
-        </a>
+            <img src="<?= IMG ?>mini/covisiere.png" alt="covisiere" />
+            <p>I recently, and expressly, made a one-pager for Timbtrack. </p>
+            <p>Due to recent cases of corona virus, the company I'm working at decided to sell headset to prevent Covid-19 propagation. </p>
+            <p>We wanted a fast to deploy and easy to make one pager. <br>So I decided to code it with pure and basic HTML & CSS (SCSS actually) on a really simple hosting.</p>
+            <p>I worked with my coworker, a designer, who made the base template. I magnified the template with Materialize library and deployed the website by FTP.</p>
+            <a href="https://covisiere.be/" class="btn waves-effect">Visit<span class="nomobile"> our website</span></a>
+        </div>
       </div>
       <div class="carousel-item">
-        <a href="https://sk8boarders.be/" class="tile">
-         <div class="description">
-            <h3>Sk8boarders.be</h3>
-            <p>A non-profit organization once called me to give a fresh and younger style to their website in WordPress. </p>
-          </div>
+        <div class="tile">
+          <h3>Sk8boarders.be</h3>
           <img src="<?= IMG ?>mini/sk8boarders.jpg" alt="sk8boarders_be" />
-        </a>
+          <p>A non-profit organization once called me to give a fresh and younger style to their website in WordPress. </p>
+          <p>I worked with their designer who made the drawings that I plugged inside the pages with Divi or with pure CSS in the theme editor.</p>
+          <a href="https://sk8boarders.be/" class="btn waves-effect">Visit<span class="nomobile"> this website</span></a>
+        </div>
       </div>
       <div class="carousel-item">
-        <a href="https://axelfiolle.be/pacpoule" class="tile">
-         <div class="description">
-            <h3>PacPoule</h3>
-            <p>Inspired of Pac-Man, you play a chicken. This is a video game I designed with RPGMV. It runs in JavaScript and PixiJS. </p>
-          </div>
+        <div class="tile">
+          <h3>PacPoule</h3>
           <img src="<?= IMG ?>mini/pacpoule.jpg" alt="Pac Poule" />
-        </a>
+          <p>Inspired of Pac-Man, you play a chicken. </p>
+          <p>This is a video game I designed with RPG Maker MV. It runs in JavaScript with the PixiJS library. </p>
+          <p>There's a story behind this game. <br>I made it during BeCode classes, I challenged the students to finish the game with more than 500 points. </p>
+          <p>The first winner and I made a chicken on the class' window in pixel-art with post-its.</p>
+          <a href="https://axelfiolle.be/pacpoule" class="btn waves-effect">Play now !</a>
+        </div>
       </div>
       <div class="carousel-item">
-        <a href="./shop" class="tile">
-          <div class="description">
-            <h3>My own store</h3>
-            <p>I spent weeks making my own store with Prestashop while working on another similar project for a client. I am proud to invite you to buy my art work !</p>
-          </div>
-          <img src="<?= IMG ?>mini/shop.png" alt="PrestaShop" />
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="./shoeconceptor" class="tile">
-          <div class="description">
-            <h3>Shoe conceptor</h3>
-            <p>Custom Converse maker tool with Stripe integration, handmade from A to Z. <small>(It's just a demonstration)</small></p>
-          </div>
+        <div class="tile">
+          <h3>Shoe conceptor</h3>
           <img src="<?= IMG ?>normal/shoeconceptor.png" alt="Shoe conceptor" />
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://www.trimala.net/" class="tile">
-          <div class="description">
-            <h3>Trimala Network</h3>
-            <p>A friend of mine once came with an Ultima Online server and wanted a website for it's community. Here what I made for him.</p>
-          </div>
-          <img src="<?= IMG ?>mini/trimala.png" alt="Trimala Network" />
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="../learning/curiculum" class="tile">
-          <div class="description">
-            <h3>My online CV</h3>
-            <p>A relaxing little exercice I made at BeCode in 2017.</p>
-          </div>
-          <img src="<?= IMG ?>normal/curiculum.png" alt="My online CV" />
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://andaroth.github.io/Learning-Environment/7-exercice-star-wars/" class="tile">
-         <div class="description">
-            <h3>Star Wars Scroller</h3>
-            <p>A little HTML and CSS exercice made at BeCode. </p>
-          </div>
-          <img src="<?= IMG ?>mini/starwars.jpg" alt="Star Wars Scroller" />
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://andaanda.tumblr.com/" class="tile">
-          <div class="description">
-            <h3>My Tumblr</h3>
-            <p>For this one I fully customised an existing template with the Tumblr's editor.</p>
-          </div>
-          <img src="<?= IMG ?>mini/owntumblr.jpg" alt="My own Tumblr" />
-        </a>
+          <p>Custom Converse maker tool with Stripe integration, handmade from A to Z. </p>
+          <p>Due to technical constraints and the end environment, I had to code it fully by hand so I was able to implement payment system with ease. </p>
+          <p>The design is kind of experimental but I enjoyed making the interface effects, when you hover the elements with the mice, for exemple. </p>
+          <p>The company does not allow external links, so you can try the demonstration of this application for free on my own website. </p>
+          <a href="https://axelfiolle.be/shoeconceptor" class="btn waves-effect">Try the app</a>
+        </div>
       </div>
     </div>
-    <a href="#stillwonders" class="btn shadebtn scrollback">My photos</a>
   </section>
   <section id="myphotos" class="strip floating-title myphotos">
     <h2><i class="fa fa-camera-retro" aria-label="camera"><span class="jhide">&#128247;</span></i> Still wonders</h2>
@@ -114,20 +73,6 @@
         <a href="https://www.flickr.com/photos/axel-andaroth/" class="btn waves-effect scrollback">Visit my flickr</a>
       </div>
     </div>
-    <!-- <div id="photoslide" class="photoslide center slider nomobile">
-      <div class="carousel-item">
-        <img src="<\?= IMG ?>mini/heavier.jpg" alt="Heavier" />
-      </div>
-      <div class="carousel-item">
-        <img src="<\?= IMG ?>mini/golden.jpg" alt="Golden" />
-      </div>
-      <div class="carousel-item">
-        <img src="<\?= IMG ?>mini/guardian.jpg" alt="Guardian" />
-      </div>
-      <div class="carousel-item">
-        <img src="<\?= IMG ?>mini/stopit.jpg" alt="Stop it" />
-      </div>
-    </div> -->
   </section>
   <section id="myvideos" class="strip myvideos">
     <h2><i class="fa fa-fast-forward" aria-label="video-camera"><span class="jhide">&#128249;</span></i> Anim-hearted</h2>

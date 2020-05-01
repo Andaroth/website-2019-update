@@ -1,6 +1,10 @@
 <nav class="nav-wrapper alltopbar">
   <h1><a href="./"><?= $meta['title'] ?></a></h1>
+<?php switch($page) { case 'portfolio': ?>
+  <p class="navigatelabel blink nomobile">Navigate :</p>
+<?php break; default: ?>
   <p class="navigatelabel nomobile">Navigate :</p>
+<?php break;} ?>
   <ul id="pagenav" class="pagenav">
     <?php /* <li><a href="#page_" class="scrollback">Top</a></li> */ ?>
 <?php switch($page) { case 'home': ?>
