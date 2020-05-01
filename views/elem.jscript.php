@@ -7,14 +7,23 @@
   ga('require', 'linkid');
   ga('send', 'pageview');
 </script>
+<script>
+  // <?= $page ?>
+
+</script>
 <!-- jQ and libs -->
 <script src="<?= JS ?>jquery-3.2.1.min.js"></script>
 <script src="<?= JS ?>visible.min.js"></script>
-<script src="<?= JS ?>slick.min.js"></script>
 <script src="<?= JS ?>materialize.min.js"></script>
-<!-- My Scripts -->
-<script src="<?= JS ?>app.js"></script>
+<!-- Specific page scripts -->
+<?php if($page=="portfolio") { ?>
+<script src="<?= JS ?>slick.min.js"></script>
+<script src="<?= JS ?>/App/elem.slick.js"></script>
+<?php } ?>
 <?php if($page=="home") { ?>
 <script src="<?= JS ?>chart.js"></script>
-<script src="<?= JS ?>elem.chart.js"></script>
+<script src="<?= JS ?>/App/elem.chart.js"></script>
 <?php } ?>
+<!-- My Scripts -->
+<script src="<?= JS ?>/App/app.js"></script>
+<script src="<?= JS ?>/App/features/sendMail.js"></script>

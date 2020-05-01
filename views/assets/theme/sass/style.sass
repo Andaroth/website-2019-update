@@ -45,10 +45,10 @@ i.devicon > span.alt-tile
   margin: 12px auto
   text-transform: uppercase
   text-decoration: none
-  border-bottom: 2px solid $detail
+  border: 2px solid $detail
   border-radius: $bradius
   box-sizing: border-box
-  transition: background-color .75s
+  transition: background-color .5s
   // box-shadow: $elevation-1
   &:hover, &:active, &:focus
     background: $detail
@@ -56,6 +56,10 @@ i.devicon > span.alt-tile
   &:active
     transform: scale(.95)
     box-shadow: none
+    border: 2px solid transparent
+.shadebtn
+  background: $nice
+  background: $nice-gradient
 .toast
   background: $detail
   color: $light
@@ -68,9 +72,6 @@ img.ico
 img.small
   max-width: $maxw/6
   max-height: $maxw/6
-.shadebtn
-  background: $nice
-  background: $nice-gradient
 .scroller
   width: 100%
   font-size: 3em
@@ -102,7 +103,7 @@ img.small
     float: left
     margin: 0 10px
 // Navbar -------------------------------------------
-$topbarH: 80px
+$topbarH: 64px
 .alltopbar
   display: block
   position: fixed
@@ -126,6 +127,10 @@ $topbarH: 80px
     margin: 0 5px 0 20px
     line-height: $topbarH
     color: $light
+    &.blink
+      font-weight: bold
+      font-family: Ubuntu
+      animation: blinkorange 1s infinite ease
   > ul
     padding: 0
     margin: 0
@@ -198,15 +203,23 @@ ul.visitmenu
       border-left: 5px solid $detail
       border-bottom: none
       background: $dark
+
+
+main.homepage
+  background: $dark url("../../img/design/family.jpg") center center fixed no-repeat
+  background-size: cover
 // Sections -------------------------------------------
 section
   display: block
-  background: $light
+  background: transparent
   text-align: center
   padding: 80px 24px
   clear: both
   z-index: 5
   border-bottom: 3px solid $detail
+  &.floating-title
+    position: absolute
+    width: 100%
   h2, h3, h4, h5, h6
     margin: 0 auto
     text-align: center
@@ -232,13 +245,14 @@ section
     background: $nice
     margin-bottom: calc(100vh - 64px)
     box-shadow: 0 3px 5px $dark07
+    border-top: 3px solid $detail
     &:after
       display: block
       content: ""
       position: absolute
       left: 0
       width: 100%
-      height: 160px
+      height: 128px
       background: url("../../img/design/about_endbg.png") top left repeat-x
       transform: translateY(60px)
 .homeChart
@@ -247,9 +261,7 @@ section.landing
   display: flex
   flex-direction: row
   justify-content: flex-end
-  background: $dark url("../../img/design/family.jpg") center center fixed no-repeat
-  background-size: cover
-  min-height: calc(100vh - 160px)
+  min-height: calc(100vh - calc(#{$topbarH} * 2))
   color: $light
   padding: 20px 40px
   margin-top: $topbarH
@@ -287,14 +299,31 @@ section.landing
       &:hover
         animation: none
         border: 2px solid $detail
-section.presentation
-  background: $darknice-gradient
+section.tenyears, section.homegrid
   color: $light
-  *.codepen
+  border: none
+  border-radius: $bradius
+  div#codepen
     height: 480px
+    margin: 16px auto
   p
     max-width: $maxw/2
     margin: 16px auto
+    &.codepen
+      border: none !important
+      margin: 0 auto !important
+      width: 100%
+      background: $light03
+section.skills
+  background: $nice
+  min-height: 560px
+section.homegrid
+  background: $darknice-gradient
+  p
+    padding: 16px 0 0 0
+    text-align: center
+  .btn
+    margin-top: 32px
 section.about
   display: flex
   flex-direction: column
@@ -327,7 +356,7 @@ section.about
     box-shadow: $elevation-1
 section.mozaic
   h2
-    margin: 8px auto
+    margin: 8px auto 32px auto
   h3
     margin: 16px auto 8px auto
   .container
@@ -343,6 +372,10 @@ section.mozaic
   strong
     color: $detail
     font-weight: bold
+  &.dark
+    background: $dark
+  &.dark-nice
+    background: $darknice-gradient
 .nomaxhskill
   height: auto !important
 section.strip
@@ -357,41 +390,60 @@ section.strip
 section.mywork
   margin-top: $topbarH
   background: url("../../img/design/bulbs.jpg") center fixed no-repeat
-section.myphotos
-  background: url("../../img/design/parking.jpg") center fixed no-repeat
 section.myvideos
   background: url("../../img/design/colors.jpg") center fixed no-repeat
 // portfolio
 section.screensmatrix
-  background: $nice
-  > *
-    max-width: 75%
-  .tile-slide
-    // box-shadow: 0px 2px 5px $dark07
-  img
-    min-width: 100%
-    max-height: $maxw*16/9
-  div.tile-slide div.description
-    background: $dark
-    border: 2px solid $detail
-    padding: 20px
-  a
-    text-decoration: none
-  .btn
-    margin: 100px auto 0 auto
-  /*.slick-prev, .slick-next
-    top: -75px*/
+  background: url("../../img/design/bulbs.jpg") fixed no-repeat
+  background-size: cover
+  padding-bottom: 8px
+  h3
+    color: $light
+  .webslide 
+    background: $dark09
+    border-radius: 4px
+    margin-top: 24px
+    div.tile
+      text-decoration: none
+      text-align: left
+      color: $light
+      padding: 20px
+      box-sizing: border-box
+      h3
+        margin-bottom: 20px
+        color: $detail
+      p
+        max-width: 400px
+        margin: 1em auto
+      img
+        width: 50%
+        margin: 0 auto
+      .btn
+        margin: 0 auto
 section.stillwonders
   background: $dark
+  padding: 0
   .viewphotoslide
-    max-width: 1200px
+    max-width: none
     .btn
       background: $dark03
-      border-color: $light07
+      border: 0
       &:hover
         background: $dark07
         color: $detail
-        border-color: $detail
+    .carousel-item
+      min-height: 640px
+      height: 100vh
+      background-size: cover
+      background-position: center
+      &.heavier
+        background-image: url('../../img/normal/heavier.jpg')
+      &.golden
+        background-image: url('../../img/normal/golden.jpg')
+      &.guardian
+        background-image: url('../../img/normal/guardian.jpg')
+      &.stopit
+        background-image: url('../../img/normal/stopit.jpg')
 section.animhearted 
   background: $nice
   article
@@ -433,6 +485,12 @@ section
 section.fullh
   min-height: 100vh
 // Grids -------------------------------------------
+.flex
+  display: flex
+.fdr
+  flex-direction: row
+.jcc
+  justify-content: center
 .grid
   display: block
   width: $maxw
@@ -460,8 +518,6 @@ section.fullh
   // width: 100% !important
   padding: 0 !important
   overflow: hidden
-  max-width: 100%
-  max-height: 75vh
   img
     max-width: 100%
   //border: 1px solid $lightnice
@@ -639,6 +695,7 @@ footer.footer
       margin-bottom: 160px
   footer.footer
     position: relative
+    z-index: 10
 // 1000px queries
 @media screen and (max-width:$mviewpw)
   .alltopbar h1
