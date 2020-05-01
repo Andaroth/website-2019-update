@@ -13,4 +13,4 @@ To run the server just enter the following commands at the root of the project's
 
 - Compile SASS : `sass --watch views/assets/theme/sass:views/assets/theme/css`
 - Run server : `php -S localhost:80`
-- Then you can test the project at the following URL : `http://localhost.com/`
+- Then you can test the project at the following URL : `http://localhost/`
