@@ -2,7 +2,7 @@
 
 if ("POST" == $_SERVER["REQUEST_METHOD"]) {
     if (isset($_SERVER["HTTP_ORIGIN"])) {
-        $address = "http://".$_SERVER["SERVER_NAME"];
+        $address = "https://axelfiolle.be";
         if (strpos($address, $_SERVER["HTTP_ORIGIN"]) !== 0) {
             exit("CSRF protection in POST request: detected invalid Origin header: ".$_SERVER["HTTP_ORIGIN"]);
         } else {
