@@ -75,7 +75,7 @@
         <article class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="fab fa-vuejs devicon big"></i><span class="alt-tile">Works actively on multiple <strong>VueJS</strong> <a href="https://timbtrack.com/">projects</a></span>
+            <i class="fab fa-vuejs devicon big"></i><span class="alt-tile">Lead developer on multiple <strong>VueJS</strong> <a href="https://timbtrack.com/">projects</a></span>
           </div>
           </div>
         </article>
@@ -89,13 +89,13 @@
         <article class="col s12 m4">
           <div class="card skill-tile">
           <div class="card-content">
-            <i class="fab fa-angular devicon big"></i><span class="alt-tile">Can handle <strong>Angular</strong> with ease</span>
+            <i class="fab fa-angular devicon big"></i><span class="alt-tile">Can handle any framework such as <strong>Angular</strong> with ease</span>
           </div>
           </div>
         </article>
       </div>
     </div>
-    <h3 class="clearfix">3. Get into more stack</h3>
+    <h3 class="clearfix">3. Get into more stacks</h3>
     <div class="container">
       <div id="more" class="row learned">
         <article class="col s12 m4">

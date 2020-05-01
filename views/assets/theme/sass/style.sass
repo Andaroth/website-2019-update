@@ -241,6 +241,7 @@ section
     background: $nice
     margin-bottom: calc(100vh - 64px)
     box-shadow: 0 3px 5px $dark07
+    border-top: 3px solid $detail
     &:after
       display: block
       content: ""
@@ -294,18 +295,13 @@ section.landing
       &:hover
         animation: none
         border: 2px solid $detail
-section.tenyears
-  position: absolute
-  top: calc(100vh - #{$topbarH} - 64px)
-  width: calc(50vw - 48px)
-  padding: 24px
-  left: 80px
-  background: $darknice-gradient
+section.tenyears, section.homegrid
   color: $light
   border: none
   border-radius: $bradius
-  *.codepen
+  div#codepen
     height: 480px
+    margin: 16px auto
   p
     max-width: $maxw/2
     margin: 16px auto
@@ -315,10 +311,15 @@ section.tenyears
       width: 100%
       background: $light03
 section.skills
-  background: $dark07
-  padding: 24px 24px 24px 50vw
+  background: $nice
   min-height: 560px
-section.story
+section.homegrid
+  background: $darknice-gradient
+  p
+    padding: 16px 0 0 0
+    text-align: center
+  .btn
+    margin-top: 32px
 section.about
   display: flex
   flex-direction: column

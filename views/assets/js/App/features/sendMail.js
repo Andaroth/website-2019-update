@@ -13,7 +13,7 @@ const sendMail = async (name,mail,msg) => {
       xhr.onreadystatechange = function() {
         console.warn(`Returned response: ${ xhr.responseText }, ${ xhr.statusText }`);
         if (xhr.readyState == 4 && xhr.status === 200) resMsg = 'Thanks for your confidence ! Your message has been sent to the mailman :)';
-        else resMsg = 'I\'m sorry but it didn\'t work. You can join me at this adress instead :&nbsp;<a href="mailto:ax.fiolle@gmail.com">ax.fiolle@gmail.com</a>';
+        else resMsg = `I'm sorry but it didn\'t work. You can join me at this adress instead :&nbsp;<a href="mailto:ax.fiolle@gmail.com?body=${document.querySelector('#msgmail').value.toString()}">ax.fiolle@gmail.com</a>`;
       }
       xhr.open('POST', 'https://axelfiolle.be/api/mail.php', false); 
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');

@@ -35,7 +35,8 @@ $(document).ready(function(){
   // CLICKS ---------------------------------------
   $(".scrollback").click((e) => {
     e.preventDefault();
-    const target = $(this).attr("href");
+    const target = $(e.currentTarget.getAttribute('href'));
+    console.log('target', target)
     scrollTo(target,1000,500);
   });
   $(".contactlink").click((e) => {

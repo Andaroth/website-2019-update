@@ -7,8 +7,17 @@
   <section id="screensmatrix" class="screensmatrix fullh">
     <h2 class="hidden">My creations</h2>
     <div id="webslide" class="webslide center slider">
+    <div class="carousel-item">
+        <a href="https://covisiere.be/" class="tile">
+         <div class="description">
+            <h3>Covisière</h3>
+            <p>Recently made a single one page with my designer as Timbtrack. We sell protections to prevent Covid-19 propagation. </p>
+          </div>
+          <img src="<?= IMG ?>mini/covisiere.png" alt="covisiere" />
+        </a>
+      </div>
       <div class="carousel-item">
-        <a href="http://sk8boarders.be/" class="tile">
+        <a href="https://sk8boarders.be/" class="tile">
          <div class="description">
             <h3>Sk8boarders.be</h3>
             <p>A non-profit organization once called me to give a fresh and younger style to their website in WordPress. </p>

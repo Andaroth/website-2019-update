@@ -20,13 +20,17 @@ h1
   overflow-y: auto
 ul.visitmenu
   top: $mobiletopbarH
-  right: 15px
+  opacity: 1 !important // important because of materialize
+  max-height: calc(100vh - 64px)
+  overflow: hidden
+  overflow-y: auto
   li a
     border-left: 0
     border-bottom: 1px solid $dark07
 section
   &:last-child
-    margin-bottom: 80px
+    &:after
+      display: none
 section.landing
   display: block
   // background: url("../../img/design/littlejack_portable.jpg") center fixed no-repeat
@@ -76,6 +80,8 @@ section.strip
   padding: 0
   > *
     max-width: none
+section.about
+  height: auto
 section.mywork
   margin-top: $mobiletopbarH
 section.screensmatrix

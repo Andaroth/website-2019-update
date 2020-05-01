@@ -11,9 +11,12 @@
     </div>
     <a href="#tenyears" id="landingscroll" class="scroller landingscroll scrollback">&and;</a>
   </section>
-  <section id="tenyears" class="tenyears card">
+  <section id="tenyears" class="homegrid">
     <h2>10 years of coding</h2>
-    <div>
+    <p class="mbottom">I design <b>dreams and experiences</b> since I was just a kid.</p> 
+    <p>The worldwide web is like an interconnected dream. I'm living in the <strong>Internet Of Things</strong>.</p>
+    <p><strong>Trust me your dreams</strong> I'll make them real</p>
+    <div id="codepen">
       <p class="codepen" data-height="480" data-theme-id="0" data-default-tab="result" data-user="Andaroth" data-slug-hash="xPxNvR" style="height: 480px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Devinez le mot mystère">
         <span>See the Pen <a href="https://codepen.io/Andaroth/pen/xPxNvR/">
         Devinez le mot mystère</a> by Axel Fiolle (<a href="https://codepen.io/Andaroth">@Andaroth</a>)
@@ -21,8 +24,9 @@
       </p>
       <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
     </div>
-    <!--<i class="fas fa-trophy" aria-label="trophy"><span class="jhide">&#127942;</span></i>-->
-    <!--<p>I started making websites when I was just a kid. <br>With more than <strong>ten years of experience in web design and developement</strong>, I can help you to <strong>create your own website</strong> and assert your presence online.</p>-->
+    <p>Did you enjoy this demonstration ? </p>
+    <p><a href="./page-portfolio">See more of my creations !</a></p>
+    <a href="#contact" class="btn waves-effect smallbtn contactlink">Ask yours</a>
   </section>
   <section id="skills" class="skills clearfix">
     <h2>My skills</h2>
@@ -37,12 +41,7 @@
       </ul>
       <canvas id="frontendChart" class="homeChart"></canvas>
     </div>
-  </section>
-  <section class="homegrid">
-    <h2>www</h2>
-    <p class="mbottom">I design <b>dreams and experiences</b> since I was just a kid.</p> 
-    <p>The worldwide web is like an interconnected dream. I'm living in the <strong>Internet Of Things</strong>.</p>
-    <p><strong>Trust me your dreams</strong> I'll make them real</p>
+    <a href="./page-about" class="btn waves-effect smallbtn">Learn more</a>
   </section>
 </main>
 <?php include(V."elem.footer.php"); ?>
