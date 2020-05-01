@@ -1,3 +1,7 @@
+// We need to force execute these commands before the end of the page's loading, else it results as a blinky scroll
+$("footer").addClass("hidden");
+$(".jhide").addClass("hidden");
+$(".jpacity").addClass("nopacity");
 $(document).ready(function(){
 
   // Setting needed global const
