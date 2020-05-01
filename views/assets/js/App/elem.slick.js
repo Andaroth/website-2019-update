@@ -2,7 +2,7 @@ $(document).ready(function(){
   // SLICK ---------------------------------------
   //websites
   $("#webslide").slick({
-    dots: false,
+    dots: true,
     infinite: true,
     centerMode: true,
     slidesToShow: 1,

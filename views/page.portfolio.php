@@ -19,10 +19,11 @@
       </div>
       <div class="carousel-item">
         <div class="tile">
-          <h3>Sk8boarders.be</h3>
+          <h3>sk8boarders.be</h3>
           <img src="<?= IMG ?>mini/sk8boarders.jpg" alt="sk8boarders_be" />
-          <p>A non-profit organization once called me to give a fresh and younger style to their website in WordPress. </p>
-          <p>I worked with their designer who made the drawings that I plugged inside the pages with Divi or with pure CSS in the theme editor.</p>
+          <p>This non-profit organization asked me to make a fresh and younger website for their skateboarding initiations. </p>
+          <p>They needed to totally refactor the website. <br>Using WordPress and Divi, I redesigned every page from scratch with a pen, then with the Divi's page builder. </p>
+          <p>I worked with their designer who made the drawings that I plugged inside the pages with the page builder or with pure CSS in the theme editor. </p>
           <a href="https://sk8boarders.be/" class="btn waves-effect">Visit<span class="nomobile"> this website</span></a>
         </div>
       </div>
@@ -30,10 +31,10 @@
         <div class="tile">
           <h3>PacPoule</h3>
           <img src="<?= IMG ?>mini/pacpoule.jpg" alt="Pac Poule" />
-          <p>Inspired of Pac-Man, you play a chicken. </p>
-          <p>This is a video game I designed with RPG Maker MV. It runs in JavaScript with the PixiJS library. </p>
+          <p>This is a video game I designed with RPG Maker MV. <br>Inspired of Pac-Man, you play a chicken. </p>
+          <p>It runs in JavaScript with the PixiJS library. </p>
           <p>There's a story behind this game. <br>I made it during BeCode classes, I challenged the students to finish the game with more than 500 points. </p>
-          <p>The first winner and I made a chicken on the class' window in pixel-art with post-its.</p>
+          <p>The first winner and I even made a chicken on the class' window in pixel-art with post-its.</p>
           <a href="https://axelfiolle.be/pacpoule" class="btn waves-effect">Play now !</a>
         </div>
       </div>
@@ -42,9 +43,9 @@
           <h3>Shoe conceptor</h3>
           <img src="<?= IMG ?>normal/shoeconceptor.png" alt="Shoe conceptor" />
           <p>Custom Converse maker tool with Stripe integration, handmade from A to Z. </p>
-          <p>Due to technical constraints and the end environment, I had to code it fully by hand so I was able to implement payment system with ease. </p>
+          <p>Due to technical constraints and the end environment, I had to code it fully by hand, so I was able to implement payment system with ease. </p>
           <p>The design is kind of experimental but I enjoyed making the interface effects, when you hover the elements with the mice, for exemple. </p>
-          <p>The company does not allow external links, so you can try the demonstration of this application for free on my own website. </p>
+          <p>The company wasn't allowing external links, so you can try the demonstration of this application for free on my own website. </p>
           <a href="https://axelfiolle.be/shoeconceptor" class="btn waves-effect">Try the app</a>
         </div>
       </div>
